@@ -1,0 +1,104 @@
+LE HTML EN JAVASCRIPT
+
+
+Intro Javascript
+Le developpement côté cient est appelé front-end developpement est tout ce qui est traité par le navigateur et affiché au navigateur appelé le user et nous en tant que developpeur , on est auteur
+Le javascript permet de réagir aux réactions du navigateur directement dans le navigateur.
+
+Ajax: Ansynchronous Javascript And Xml.
+
+Il permet de faire des changements sans reloder, c'estb à dire chargement de la page ou des data etc...
+Les qualités requises pour être developpeur
+1/La RIGUEUR ======> Primordiale dans l'écriture du code.Le navigateur trebuche sur tout code mal écrit. les espaces, les virgules, et poit virgule
+2/L'ORGANISATION, les dossier et leur nomaclentures et aussi faire accompagner par des commentaires lisibles.Faire très attention et concentré et se relire constamment.Valider sur le W3C, tester tôt et souvent. un signe écrit 2 fois peut inverser la signification. Un developpeur doit savoir fractionner son travail en contenu plus digest et garder une vue globale de l'ensemble de ce qu'il écrit.
+3/LA CAPACITE d'ABSTRACTION est très importante. Avant de commencer à écrire, il doit être capable de s'imaginer le resultat de ce qu'il va executer.
+
+
+*La version actuelle de Javascript c'est JS en abrégé, c'est implementation d'un lagage script appelé EcmaScript et stardadisé dans les années 90 par Nestcape.
+Inventé par Brendan Eich qui est le cofendateur de Mozilla. 
+ES5 est utilisé depuis 2009, on arrive à Es6 aujourd'hui.
+Avant les pages étaient statiques et depuis l'entrée de javascript, on est arrivé à l'interactivité des sites.
+Javascript permet de faire:
+_Definir une action au clic
+_stopper des valeurs utiles dans des variables
+_Faire des operations sur des moceaux de textes, on appeele ça ds chaînes de caractères.
+_Permet aussi d'executer du code en reponse à certains evenments se produisant sur une page web
+_Verifier des données entrées dans 
+_créer ou declencher des animations
+_Faire des carousels
+Faire des menus deroulants
+_Des galeries d'images interactives
+_Gerer les vidéos et audio
+_Experience en 2D et 3D
+_Faire des jeux
+_datant visualisation =====> visualisation des données, des applications completes fondées sur des bases de données, des applications online ou offline.
+
+JS est langage compacte tout en restant souple et assez accessible.
+Les developpeurs ont écrit de nombreux outils sur le core de Javascript, créant des fonctionnalités parmi elles, on a des API.
+Il existent de categorie d'API.
+_API navigateur 
+_API tirs parti
+
+Par definition est application Interfaces de Programming d'Application ou Application.
+Ce sont des boites à outils qui permettent aux integrateurs et developpeurs de créer des programmes.
+
+Par exemple dans API vidéo on peut trouver la commande "Play". Ce sont des outils dejà developpés et testés.
+C'est comme des codes en KIT.
+Menusier Vs Ikea.
+
+les API navigateur font partie integrante du navigateur et peuvent acceder à des données de l'environnement informatique(ordinateur, le mobile etc...) ou faire d'autres chose complexes par exemple.
+
+Par exemple:
+l'API DOM (Document Object Model) nous permet de manipuler du HTML et du CSS(créer, modifier, supprimer du HTML, appliquer de nouveaux styles de façon dynamique.)
+
+
+Exemple: Créer une popup, charger des nouveaux contenus dansq une page, il s'agit de l'action du DOM.
+https://fr.wikipedia.org/wiki/Document_Object_Model
+
+
+API DE GEOLOCALISATION: Permet de récuperer des données géographique. Par exemple logitude et latitude de notre user. 
+https://developer.mozilla.org/fr/docs/Web/API/Geolocation
+
+APIs Canvas et WbGL =====> Permet de créer des graphiques animés en 2D (Canvas) et 
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
+
+
+Compresser de la vidéo dans les formats web:
+OGG/mp4/WebM
+https://handbrake.fr/
+exemple Dataviz:
+
+
+On a d'autres API qui permettent de prendre le flux vidéo de la webCam.
+
+
+API PeerTopeer ====================> https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API#Connection_setup_and_management
+WebStorage ========================> Permet de stocker beaucoup de choses avec un cache manifeste
+Exemple: GoogleDoc.
+API webstorage: permet des application offline avec des (caches manifeste).
+API web workers: Permettent de faire de multi taches, ils travaillent en arriere plan sur le web.
+
+les API tierces parties.: Librairies fournies par des fournisseurs de contenus.
+Ne font pas partie par defaut du navigateur, on doit recuperer le code de la librairie (faire un lien vers la Librairies) pour pouvoir l'utiliser sur le navigateur.
+l'API des twitters qui permet par exemple (https://developer.twitter.com/) 
+
+L'API Google:permet d'afficher des cartes personnalisées.
+
+LA SEPARATION DES CONCEPTES
+
+Ne pas mélanger les règles de bases.
+
+*Pas de CSS dans javascript
+*Pas de Javascript dans le CSS
+*Pas de balises HTML dans le Javascript*Pas de CSS dans le HTML (feuilles de styles)
+Mais on évite de faire les styles inline. Des feuilles de styles internes ou externes oui mais evite
+<p style="color:red;">lorem</p>)
+
+
+
+Le HTML est utilisé pour hirarchiser 
+CSS pour la decoration
+Javscript pour l'interaction pour l'utilisateur.
+Developpement front-end est tout ce qui estb traité par le navigateur et utilisé par l'utilisateur
+Le back-end pour les develloppeur et le serveur

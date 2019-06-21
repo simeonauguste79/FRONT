@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <form action="#" id="monForm">
+        <fieldset>
+            <legend>Info pro</legend>
+            <label for="prenom">Ton prenom</label>
+            <input type="text" id="prenom">
+            <br>
+            <label for="motpasse">Ton mot passe</label>
+            <input type="password" id="motpasse">
+            <br>
+            <label for="date">Ta date de rendez-vous</label>
+            <input type="date" id="date">
+            <br>
+            <strong>Genre</strong><br>
+            <label for="homme">Homme</label>
+            <input type="radio" id="homme" value="homme" name="genre">
+            <label for="femme">Femme</label>
+            <input type="radio" id="femme" value="femme" name="genre">
+            <br>
+
+            <select name="statut" id="statut">
+                <option value="etudiant">Etudiant</option>
+                <option value="enseignant">Enseignat</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <p>Choix de couleur:</p>
+
+<p>
+  <input type="checkbox" id="violet" name="couleurs"
+         checked>
+  <label for="violet">Violet</label>
+</p>
+
+<p>
+  <input type="checkbox" id="orange" name="couleurs">
+  <label for="orange">Orange</label>
+</p>
+  <input type="reset" id="annuler" value="annuler">
+  <input type="submit" id="envoyer" value="Envoyer">
+
+    </fieldset>
+    </form>
+    <div class="info">
+        <p></p>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function(){
+        // console.log('jsquery chargé');
+    
+        //On va recuperer les valeurs qui sont dans le formulaire 
+        /*
+        1_Il faut valider le formulaire 
+        *Créer l'événement on submit et stopper la redirection
+        */
+   $('#monForm').on('submit', function(ev){
+
+    //Pour stopper la redirection on va intercepter l'evenement . Attention pour cela, il est necessaire de bien in iquer le parametre ev dans les parenthèses de la fonction: fonction(ev)
+    //lit le prenom de l'utilisateur
+    //lit et affiche le mot de pass
+    ev.preventDefault();
+
+    console.log($('#prenom').val());
+    console.log($('#motpasse').val());
+    console.log($('#statut').val());
+    console.log($('.radio:checked').val());//Lit l'etat du bouton radio qui est coché
+    //eccrit Michel dans la zone de texte prenom
+
+    // $('#prenom').val('Michel')//ecrit Michel dans dans la zone de texte
+    // $(':radio').val([homme]);
+
+//On va créer une balise p.  La remplir avec la string 'bonjour'
+//1créer une balise
+$('<p>').append('Bonjour ' + $('#prenom').val()).appendTo('.info');
+$('password').append('Ton mot de passe ' + $('#motpasse').val()).appendTo('.info');
+$('date').append('Bonjour ta date de rendez-vous ' + $('#date').val()).appendTo('.info');
+
+
+   })
+    })//FIN DU SCOPE JQUERY
+    </script>
+</body>
+</html>

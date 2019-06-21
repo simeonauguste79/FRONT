@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- empèche le redimensionnement (mobile)-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        html{
+            /* modifier la taille de typos pour avoir une taille de 10px */
+            font-size: 62%; /* en % à cause de bug sur IE | 62% veut dire 10px*/
+        }
+
+        body{
+            margin: 0;
+            font-size: 1.4rem; /* = 14px*/
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        h1{
+            border: 2px crimson solid;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 1rem; /*10px*/ /*Quand on rajoute un padding ça augmente la taille*/
+            width: 300px;
+            /* La taille calculée de la boite du h1 : */
+            /* border-left 2px + padding-left 10px + width 300px + padding-right 10px + border-right 2px = 324px */
+        }
+        p{
+            border: 2px gold solid;
+            font-size: 1.3rem; /* 1.3 x 10px = 13px*/
+            margin-top: 0;
+            width: 300px;
+            /* La taille calculée de la boite du p : */
+            /* border-left 2px + width 300px + border-right 2px = 304px */
+            
+        }
+        article{
+            border: 2px silver solid;
+            width: 50%;
+            /* pour éviter que cet article soit plus petit  que 160px on utilise le min-width */
+            min-width: 160px;
+
+            /*  pour éviter que cet article soit plus grand  que 160px on utilise le max-width */
+            max-width: 600px;
+            
+            padding: 1rem;
+            /*  largeur calculée : 324px */
+            box-sizing: border-box;
+            /* avec le box-sizing: border-box, la valeur calculée sera de 300px quels que soient les border ou les paddings */
+            /* pour centrer l'article dans le body */
+            margin: 0 auto;
+        }
+        h2{
+            background: coral;
+            width: 57.9710%; /* 160px;  à convertir en % */
+            /* (cible 160px divisé par contexte 276px) x 100 = 57.9710 résultat en % */
+            /* pour centrer ce h2 dans l'article */
+            margin: 0 auto;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <!-- liste de balises display: block; 
+    body, div, p, h1..h6, ul, ol, li, dl, dt, dd
+    new html5 : section, article, aside, nav, header, <footer>
+        les balises block sont des boites qui font 100% de largeur par défaut et qui sont affichées les unes sous les autres verticalement.
+        l'espace qui sépare les boites c'est la marge.
+
+    liste des balises inline : a, span, label, adress
+
+    liste des balises inline-block : img, audio, video, canvas, input, sele
+
+    liste des balises display:table : table
+    liste des balises display:table-row : tr 
+    liste des balises display:table-cell : td
+    -->
+    <h1>HTML</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque consectetur quod nesciunt. Necessitatibus natus a numquam veniam deleniti odio quibusdam, quis maxime fugit eos neque molestiae eligendi culpa quos! Adipisci!</p>
+    <h1>CSS : C'est le super souk</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque consectetur quod nesciunt. Necessitatibus natus a
+        numquam veniam deleniti odio quibusdam, quis maxime fugit eos neque molestiae eligendi culpa quos! Adipisci!</p>
+        <article>
+            <h2>Histoire du web</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis iure itaque quas ut nisi ullam quasi iusto cumque? Ipsa voluptatem praesentium blanditiis labore ab maxime aperiam cum provident quasi!
+        </article>
+</body>
+</html>

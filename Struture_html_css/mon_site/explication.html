@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Explication</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Description sous le titre apparaîssant dans la recherche google - mot clés pour les moteurs de recherches -->
+    <meta name="description" content="Ma premiere page en html/css">
+    <!-- link for Font -->
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CLemonada%7COswald" rel="stylesheet">
+    <!-- link font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- mon haut de site -->
+    <header>
+        <div id="logo">
+            <a href="index.html" target="_blank">
+                <img src="images/logo.png" alt="logo html/css">
+            </a>
+        </div>
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+        <div id="rs">
+            <a href="https://twitter.com/" target="_blank">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="https://facebook.com/" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </header>
+    <!-- navigation du site -->
+    <nav>
+        <a href="index.html">Structure</a>
+        <a href="texte.html">Textes</a>
+        <a href="selecteur.html">Selecteurs</a>
+        <a href="image.html">Images</a>
+        <a href="position.html">Positions</a>
+        <a href="zoning.html">Zooning</a>
+        <a href="liste.html">Listes</a>
+        <a href="lien_menu.html">Liens</a>
+        <a href="tableau.html">Tableaux</a>
+        <a href="formulaire.html">Formulaires</a>
+        <a href="multimedia.html">Multimedias</a>
+        <a href="animation.html">Animations</a>
+        <a href="explication_flexbox.html">FlexBox</a>
+        <a href="explication.html" class="active">Figure/Figcaption</a>
+        <a href="pattern.html">Pattern</a>
+    </nav>
+    <!-- contenu principale -->
+    <main>
+        <section>
+            <h3><mark>Les Figcaptions</mark></h3>
+            <div class="texte">
+                <p><mark>1_</mark> Un navigateur n'implémentant pas ces éléments affichera le contenu au format brut, sans présentation particulière. par défaut le style appliqué est <strong><u>display:  block</u></strong> sur les deux éléments, ainsi des marges sur <strong>figure</strong></p><br>
+                <p><mark>2_</mark> Application sur le web. Utilisation sans légendes. Il est tout à fait envisageable d'insérer <strong>figcaption</strong> avant l'image voire ne pas le mettre du tout, car il est facultatif.</p><br>
+                <figure>
+                    <img src="images/gryffondor.jpg" alt="Proposition pour le thème une photo">
+                    <p>les différent élément peuvent être stylisés en css.</p>                  
+                </figure> <br><br>
+                <p><mark>3_</mark> Une image avec sa légende dans son usage le plus courant, l'élément <strong>Figure</strong> contient une image puis sa légende.</p> <p><strong>Figcaption</strong>
+                    <br><br>
+                <figure>
+                    <img src="images/hufflepuff.png" alt="gryffondor">
+                    <figcaption>Proposition sur le thème : <br><em>Harry Potter</em></figcaption>
+                </figure> </p>
+                <p><mark>4_</mark> Utilisation avancée. Il est prévu de pouvoir regrouper une liste d'image et ainsi les lier à l'aide d'un unique élément <strong>Figcaption</strong>. Une listes d'images. <br><br>
+                <figure>
+                    <img src="images/gryffondor.jpg" alt="" width="180" height="240">
+                    <img src="images/hufflepuff.png" alt="" width="180" height="240">
+                    <img src="images/ravenclaw.jpg" alt="" width="180" height="240">
+                    <img src="images/slyverin.jpg" alt="" width="180" height="240">
+                    <figcaption>Visiter Hogwards. The best wizard school in the world.</figcaption>
+                </figure>
+                </p>
+                <p><mark>5_</mark> Un block de code. Les illustrations nes sont pas les seules éléments HTML à pouvoir profiter des descriptions <strong>"figure"</strong> et <strong>"Figcaption"</strong>. On peut également les appliquer à un code source.
+                <figure>
+                    <pre>
+                        <code>
+                            <div class="divH2">
+                                <h2>Ma page image</h2>
+                            </div>
+                        </code>
+                    </pre>
+                    <figcaption>description du code source présenté</figcaption>
+                </figure>
+            </p>
+            </div>
+        </section>
+        <section>
+            <h3>Video</h3>
+            <figure>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8bYBOVWLNIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                    <figcaption>Fantastic Beasts: The Crimes of Grindelwald - Final Trailer</figcaption>
+            </figure> <br><br><br>
+            <p>
+                Les diagrammes et autre graphes dynamiques du coté de <mark>Canvas et SVG</mark>, le document peut également en profiter. HTML5 ne compte pas que <strong>"Figure"</strong> et <strong>"Figcaption"</strong> dans ses nouveaux éléments mais également <strong>"Canvas"</strong>, qui vous permettera de créer, en association avec JavaScript, des diagrammes, des graphiques, et tout ce qu'une surface de dessin permet de faire. A ce sujet, consultez l'article de davis Rousset: Introduction aux API's graphique D'HTML5: SVG & Canvas, choisir <strong>"Figure"</strong> ou <strong>"Aside"</strong>?</p>
+                <p>Ces deux éléments sont des unités de contenumais non pas le même rôle sémentique. Tandis que <strong>"aside"</strong> n'est pas essentiel pour la compréhenssion de la page (il ne doit être qu'un rapport tangentiel), <strong>"figure"</strong> est lié à celle-ci: il transmet un contenu pertinent, lié au contenu principal, comme le serait un image classique.</p> <br><br>
+                <p>Nous pouvons donc résumer la chose comme suit:</p>
+                <p><mark><strong>"aside:"</strong></mark> sont contenu est péréphérique à la page, et son absence ne doit pas géner la compréhenssion de celle-ci.</p>
+                <p><mark><strong>"figure:"</strong></mark> sont contenu contribue à donner du sens et de la compréhenssion à la page, et son placement n'est pas determinant.</p> <br><br>
+                <p><mark><strong>"Illustration légendée:"</strong></mark> Inaugurés avec HTML5, les éléments <strong>"Figure"</strong> <strong>"Figcaption"</strong> fonctionnent de concert pour associer une légende à une illustration ou un autre élément média.</p>
+                <figure>
+                    <img src="images/gryffondor.jpg" alt="">
+                    <figcaption>légende de la photo</figcaption>
+                </figure>
+                
+        </section>
+       
+    </main>
+    <a href="#logo">
+        <button type="button">
+            <i class="fas fa-arrow-circle-up" aria-hidden="true"></i>
+        </button>
+    </a>
+    <!-- https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
+    <!-- pied de page -->
+    <footer>
+
+    </footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: forestgreen;
+            /* p étant une balise block, sa largeur est de 100% */
+        }
+        strong{
+            background-color: yellow;
+            /* strong étant un élément inline, c'est une boite de ligne dont la largeur s'adapte au texte qu'il y a dedans */
+            padding: 1rem; 
+            /* les padding verticaux top et bottom ne fonctionnent pas ou mal sur les balises inline */
+            /* les width et height ne fonctionnent pas du tout sur les éléments inline */
+        }
+        em{
+            background-color: thistle;
+            padding: 1rem;
+            display: inline-block;
+        }
+        ul{
+            border: 2px crimson solid;
+            list-style: none;
+            /* ATTENTION les ul ont un padding-left de 40px par défaut */
+            /* reset de ce padding */
+            padding-left: 0;
+        }
+        li{
+            border: gold solid;
+            display: inline-block;
+            padding: 1rem;
+        }
+        
+        section{
+            border: 2px teal solid;
+        }
+        section div{
+            border: 2px firebrick solid;
+            box-sizing: border-box;
+            width: 50%;
+            padding: 1rem;
+            float: left;
+            /* avec le float les div sortent du flux, le parent section ne les contient plus */
+        }
+        /* boite à outils des float : le clearfix */
+        /* pour l'utiliser on attribue la class="clearfix" à la balise parent des flottants */
+        .clearfix:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Du gras</strong> Expedita nam quasi excepturi facilis praesentium molestiae. Facere aspernatur sapiente, aliquam quisquam numquam similique beatae et delectus! Porro voluptas ad quis quia.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur <em>De l'italic</em> adipisicing elit. Expedita nam quasi excepturi facilis praesentium molestiae. Facere aspernatur sapiente, aliquam quisquam numquam similique beatae et delectus! Porro voluptas ad quis quia.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nam quasi excepturi facilis praesentium molestiae. Facere aspernatur sapiente, aliquam quisquam numquam similique beatae et delectus! Porro voluptas ad quis quia.</p>
+
+    <ul>
+        <li>Pomme</li>
+        <li>Poire</li>
+        <li>bannane</li>
+    </ul>
+
+
+    <section class="clearfix">
+        <div>UN</div>
+        <div>DEUX</div>
+        <div>TROIS</div>
+    </section>
+</body>
+</html>

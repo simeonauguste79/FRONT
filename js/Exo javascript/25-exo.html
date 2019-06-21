@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <title>Styles</title>
+
+   <style type="text/css">
+*{
+box-sizing: border-box;
+}
+       .active{
+           color: #fff;
+           background: #000;
+           border: 1px solid black;
+       }
+
+   </style>
+
+</head>
+
+<body>
+
+   <!-- h1{Modifier dynamiquement le style}+h2{Objectif:}+p{Manipuler les styles des éléments html en javascript.}+h2{Énoncé :}+p{Soit le document html suivant :}+ol>li{Ecrire la fonction changer_style qui permet de styler le paragraphe au clic du bouton par :}>(li{une couleur blanche}+li{un background fuschia}+li{une bordure royalblue pointillée de 1px}+li{un retrait de 5px}) -->
+
+   <h1>Modifier dynamiquement le style</h1>
+
+   <h2>Objectif:</h2>
+
+   <p>Manipuler les styles des éléments html en javascript.</p>
+
+   <h2>Énoncé :</h2>
+
+   <p>Soit le document html suivant :</p>
+
+   <ol>
+
+       <li>Ecrire la fonction changer_style qui permet de styler le paragraphe au clic du bouton par :
+
+           <li>une police de couleur blanche</li>
+
+           <li>un background *rosyBrown*</li>
+
+           <li>une bordure *teal* pointillée de 6px</li>
+
+           <li>un retrait de 30px (INDICE =>>> retrait = marge intérieure)</li>
+
+           <li>une largeur d'écran de 60%... centrée biensûr ;-)</li>
+
+       </li>
+    </ol>
+       <hr>
+    <p id="parag1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+
+       consequat.
+
+   </p>
+
+   <!-- ici j'appelle ma fonction JavaScript depuis la balise html -->
+
+   <button onclick="changer_style()">Changer Style</button>    <!-- appel du .JS -->
+
+   <script>
+       var police = prompt("Tapez une police de couleur blache");
+/*
+Script changer_style()
+*/
+// bonne pratique : Ici en j'appelle mes éléments :
+// bonne pratique : var p = document.getElementById('parag1');
+// bonne pratique : var bouton = getElementById('btn');
+function changer_style() {
+    var p = document.getElementById('parag1');
+    /*Je récupère ma balise p#parag1 */
+    // bonne pratique : j'applique les modifications de style css;
+    /*Ici je vais changer le style CSS de ma balise avec la methode style à laquelle j'applique les propriétés CSS 
+    exemple = style.color => change la couleur des lettres
+    */
+    p.style.color = "white";
+    p.style.backgroundColor = "rosyBrown";
+    p.style.border = "6px dotted teal";
+    p.style.padding = "30px";
+    p.style.width = "60%";
+    p.style.margin = "0 auto";
+}
+// bonne pratique : J'agis sur le DOM
+//bonne pratique : bouton.addEventListener('onClick',changer_style());
+// bonne pratique : changer_style();
+   </script>
+
+</body>
+</head>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+        font-size: 'helvetica new', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background: rgba(0, 0, 200,6);
+        padding: 5px 10px;
+        border-radius: 10px;
+        display: inline-block;
+        box-shadow: 1px 1px rgba(0, 0, 0,8);
+        cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p>Ton prenom : Isa</p>
+    <script>
+        var para = document.querySelector('p');
+        //addEventListener est un écouteur d'évenement et cette methode attend toujours 2 arguments.
+        //1_L'évenement qu'on attend qui va declencher qu'on mettra en deuxiéme argument
+        //2_L'action à mener après l'évenement
+        
+        para.addEventListener('click' , changeNom);// changeNom est un appel qu'on lance pour une fonction
+        function changeNom(){
+            var nom = prompt('Entre ton prenom');
+            para.textContent = 'Ton prénom :' + nom;
+        }
+    </script>
+</body>
+</html>

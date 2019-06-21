@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head> <!--En-tête du document-->
+        <title> Ma page listes</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <meta name="description" content="Les listes en HTML / CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                <a href="index.html" target="_blank"><img src="img/logo_360.png" alt="logo html css"></a>
+            </div>
+            <div id="slogan">
+                <h1>Mon premier site en HTML / CSS</h1>
+            </div>
+            <div id="rs">
+                <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+
+                <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="clear"></div>
+        </header>
+
+        <nav>
+            <a href="index.html">Structure</a>
+            <a href="texte.html">Textes</a>
+            <a href="selecteurs.html">Selecteurs</a>
+            <a href="images.html">Images</a>
+            <a href="position.html">Positions</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="listes.html"  class="activ">Listes</a>
+            <a href="lien_menu.html">Liens & menus</a>
+            <a href="tableau.html">Tableaux</a>
+            <a href="formulaire.html">Formulaires</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="animation.html">Animations</a>
+            <a href="fancy_box.html">Fancy Box</a>
+            <a href="explication.html">Explications</a>
+            <a href="pattern.html">Pattern</a>
+
+        </nav>
+
+        <main>
+            <h2>Les listes</h2>
+            <section class="nonOrdonnee">
+                <h3>Les listes ul : non ordonnées</h3>
+                <ul class="fruit">
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Fraise</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Banane</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Mangue</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Listes imbriquées</h3>
+                <ul class="imbriquee">
+                    <li class="eu"><i class="fa fa-arrow-right" aria-hidden="true"></i> <span>Europe</span>
+                        <ul>
+                            <li>Angleterre</li>
+                            <li>Islande</li>
+                            <li>Suède</li>
+                        </ul>
+                    </li>
+                    <li class="asie"><i class="fa fa-arrow-right" aria-hidden="true"></i> <span>Asie</span>
+                        <ul>
+                            <li>Malaisie</li>
+                            <li>Japon</li>
+                            <li>Indonésie</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Listes ol : ordonnées</h3>
+                <ol>
+                    <li>Html / Css</li>
+                    <li>PHP / SQL</li>
+                    <li>JS / JQUERY</li>
+                </ol>
+            </section>
+            <section>
+                <h3>Listes de définition</h3>
+                <dl>
+                    <dt>F</dt>
+                    <dd>France</dd>
+                    <dd>Finlande</dd>
+                </dl>
+            </section>
+        </main>
+        <a href="#logo"><button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button></a>
+        <!-- fa. => classe de FontAwesome -->
+        <!-- aria-... accès de contenus web plus faciles pour les handicapés => https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
+
+        <footer>
+
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,361 @@
+*{
+	box-sizing: border-box;  /*ça bloque l'élement, le recentre et ça fait une marge*/
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1{
+  font-size: 70px;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 400;
+}
+h2{
+    font-size: 50px;
+    color: CRIMSON;
+    padding: 20px;
+    font-weight: bold;
+	font-family: 'Amatic SC', cursive;
+
+}
+h3{
+    font-size: 22px;
+    color: #2c3e50;
+    padding: 15px;
+}
+h4{
+	text-align: center;
+	margin-top: 30px;
+	color: #2c3e50;
+	font-size: 20px;
+}
+h5{
+    font-size: 85px;
+    color: /*CRIMSON*/purple;
+    padding: 20px;
+    font-weight: bold;
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+}
+blockquote{
+    font-style: italic;
+    font-size: 120%;
+}
+strong{
+    font-weight: bold;
+}
+main{
+  background:;
+	margin: 0 auto;
+	width: 1000px;
+}
+aside{
+    /*height: 250px;*/
+    height: 300px;
+
+}
+section{
+    margin-top: 50px;
+    /*background: THISTLE;*/
+    padding: 20px;
+}
+footer{
+    background:MISTYROSE;
+    height: 30px;
+}
+/*********************************  DEBUT HEADER  ***********************************/
+header{
+    background-color:SLATEGRAY;
+    height: 175px;
+}
+#logo{
+  width: 25%;
+  text-align: center;
+  padding: 15px;
+  float: left;
+}
+#rs{
+  width: 25%;
+  float: left;
+  padding: 20px;
+}
+#rs a{
+font-size: 30px;
+color: white;
+display: block;/*change leur type inline en block pour les mettre les uns en dessous des autres*/
+text-align: center;
+padding: 15px 30px 0 0;
+text-decoration: none;
+}
+#rs a:hover{
+  font-size: 60px;
+  transition: 1s;
+}
+/**********************FIN DE HEADER*******************/
+/*********************DEBUT DE NAV*********************/
+nav{
+  background-color: MISTYROSE;
+  height:70px;
+  border-bottom: 4px solid slategray;
+  text-align: center;
+  padding: 17px;
+}
+nav a{
+  font-family: 'Amatic SC' cursive;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  border: 1px solid pink;
+  padding: 6px 9px;
+  border-radius: 7px;
+  margin: 0px 8px;
+}
+nav a:hover{
+  background: pink;
+  transition: 1s;
+}
+.activ{
+  background: pink;
+}
+/********************FIN DE NAV**********************/
+/********************DEBUT DE TEXTE*****************/
+.roboto p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/******************FIN DE PAGE TEXTE****************/
+/****************DEBUT DE PAGE SELECTEUR************/
+.select p{
+  color:red;
+}
+.select p:first-of-type{
+  color: purple;
+}
+.select p:last-of-type{
+  color: purple;
+}
+.select p:nth-of-type(5),.select p:nth-of-type(6){
+  color:black;
+}
+.select .zoneB .couleurBleu{
+  color: blue;
+}
+.select #zoneD span{/*le span prendra en compte aussi .
+  couleurBleu sauf pour la couleur car on l'aura déjà définie*/
+  color: #32ff32;
+
+}
+.select .zoneA{
+  color: #f56;
+}
+.select .zoneB{
+	color: #963;
+}
+.select #zoneC{
+  color: #98f32f;
+}
+/*******************************FIN DE PAGE SELECTEUR****************/
+/********************************PAGE IMAGE**************************/
+.imageFond{
+  background: #000 url(../img/fond.jpg) no-repeat;
+  background-size: cover;
+}
+.imageFond p{
+  width:75%;
+  margin: 100px auto 200px auto;/*auto permet de centrer*/
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  font-size: 120%;
+  border-radius:10px;
+}
+/**********La tour Eiffel****************/
+img[src="img/toureiffel.jpg"]{
+	margin: auto;
+	width: 250px;
+	display: block;
+	border: 5px solid;
+	box-shadow:5px 5px 15px rgba(0,0,0,0.5);
+	}
+  /*************************rotation************/
+  .rotationImg{/*image de type inline-block,
+    elle comporte des marges par défaut*/
+    text-align: center;
+  }
+  .image{
+    margin: 20px;
+    border: 5px solid #eee;
+    box-shadow: 4px 4px rgba(0,0,0,0.5);
+    transition: 1s;
+  }
+  .image:hover{
+    transform: rotate(7deg);
+  }
+  .rotation360:hover{
+    transform: rotate(-360deg);
+  }
+  /*******************FIN DE PAGE IMAGE**********/
+/************************ DÉBUT PAGE POSITION *********************** */
+
+.centre{
+	margin: 0 auto;
+	width: 500px;
+  background: #3cc;
+  color: white;
+  text-align: center;
+  line-height: 180px;
+  font-size: 50px;
+  font-style: italic;
+}
+.relative{
+  background: red;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  bottom: 50px;
+  margin: 0 auto;
+}
+.relative div{
+  position: absolute;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  background: blue;
+}
+
+button{
+  position: fixed;
+  background :transparent;
+  right: 20px;
+  cursor: pointer;
+  font-size: 350%;
+  color: slategray;
+  border :none;
+  bottom: 40px;
+}
+
+button:hover{
+  color :pink;
+  transition: 1s;
+}
+
+.trente{
+  width: 30%;
+  padding: 20px;
+  font-size :22px;
+  background: #f1684e;
+  color: #efe94b;
+  font-weight: bold;
+
+}
+
+.cinquante{
+  width: 50%;
+  padding: 20px;
+  font-size: 22px;
+  background: #383746;
+  color: #efe94b;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cent{
+  width: 100%;
+  padding: 20px;
+  font-size: 22px;
+  background: #3cc;
+  color: #efe94b;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.carre{
+  width: 170px;
+  height: 170px;
+  background: ROSYBROWN;
+  border: 3px solid #3cc;
+  margin: 10px;
+  float: left;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  line-height: 150px;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+}
+
+.carre:hover{
+  background: #DC143C;
+  border: 15px solid LIGHTSEAGREEN;
+  transition: 1s;
+  transform: rotate(45deg);
+  border-radius: 85px;
+}
+.float2{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.rect{
+  height: 40px;
+  background: DARKSEAGREEN;
+}
+.c1, .c2, .c3, .c4{
+  width: 25%;
+  height: 250px;
+  float: left;
+}
+.c1{
+  background: LIGHTPINK;
+}
+.c2{
+  background: LIGHTSALMON;
+}
+.c3{
+  background: TURQUOISE;
+}
+.c4{
+  background: ROSYBROWN;
+}
+.clear{
+  clear: both;
+}
+
+/*Le flex  : méthode et techniques qui permettent de placer des éléments.
+Les parents ont leur met un display : felx et placent tes enfants*/
+
+.flex{
+  display: flex;
+  /*justify-content :space-around;*//*les éléments s'affichent avec un espace égal autour de même*/
+  justify-content: space-around;/*les éléments s'affichent avec un espace entre eux*/
+  flex-direction: row;  /*flex-direction: row-reverse;*/ /*Les élements s'inversent sur la rangée*/
+}
+
+.flex div{
+  width: 150px;
+  height: 150px;
+  background: INDIANRED;
+  border: 3px solid;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+/**************************FIN PAGE POSITION****************************/

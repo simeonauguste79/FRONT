@@ -1,0 +1,23 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ 
+
+table
+{
+    border-collapse: collapse;
+}
+
+td
+{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+tr:nth-child(odd){
+    background-color: aqua;
+}
+
+tr:nth-child(even){
+    background-color: #ff00b3;
+}

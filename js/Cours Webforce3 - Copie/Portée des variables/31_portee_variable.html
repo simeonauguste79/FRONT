@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>La portée des fonctions et  les conflits</h1>
+    <p>La portée est un concept btrès important en Js, lorsqu'on a affaire à des fonctions.<br>
+        Quand on crée une fonction, les variables de la fonction ont leur propres portée. Ce qui signifie qu'elles sont enfermées dans leur propre compartiment fermé et elles ne peuvent pas être affecté ou par le code en dehors de la fonction
+    </p>
+    <p>Le plus haut niveau en pensant à la métaphore du zoo, le plus haut niveau en dehors de notre fonction est appelée la portée globale. les valeurs definies dans la portée globale sont accessible à partir de n'importe quelle partie du code. Pensons au gradien du zoo qui a toutes les clés. </p>
+    <p>Javascript est construit de cette façon pour plusieurs raisons et en particulier <br>
+    pour des raisons de securité et d'organisation. <br>
+Parfois, vous ne voulez pas que vos variables soient accessible sà toutes les autres parties du code <br>
+depuis l'exterieur, ces parties peuvent interferées avec d'autres parties du code. Il faut alors eviter les conflits ou des accidents</p>
+
+
+<p>
+Par exemple, on un fichier HTML qui appelle deux fichiers javasript externes et que les deux ont une variables et une fonction definie utilisant le même nom.
+
+</p>
+<script src="script_1.js">
+/*On invoque la fonction ditSalut() qui peut être aussi bien definie dans un script interne que dans un script externe qui executent la fonction*/
+</script>
+<script src="script_2.js"></script>
+<script>
+    ditSalut();
+</script>
+</body>
+</html>

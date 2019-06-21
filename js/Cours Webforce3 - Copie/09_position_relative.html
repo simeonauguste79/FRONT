@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .container{
+            border: 2px solid crimson;
+            width: 70%;
+            margin: 0 auto;
+        }
+        p:nth-of-type(2){
+            background: crimson;
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+        p:nth-of-type(4){
+            background: tomato;
+            /* les balises top, left... ne fonctionne que avec des élément positionné */
+            top: 40px;
+            left: 100px;
+            position: relative;
+        }
+        footer{
+            background: silver;
+            padding: 1rem;
+            border-radius: 10px;
+            width: 90%;
+            position: relative;
+            margin: 0 auto;
+            bottom: -1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt culpa id labore voluptates odio quasi iusto alias, molestias, commodi earum aperiam officia ipsum veritatis nulla architecto eligendi laboriosam exercitationem quidem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt culpa id labore voluptates odio quasi iusto alias, molestias, commodi earum aperiam officia ipsum veritatis nulla architecto eligendi laboriosam exercitationem quidem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt culpa id labore voluptates odio quasi iusto alias, molestias, commodi earum aperiam officia ipsum veritatis nulla architecto eligendi laboriosam exercitationem quidem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt culpa id labore voluptates odio quasi iusto alias, molestias, commodi earum aperiam officia ipsum veritatis nulla architecto eligendi laboriosam exercitationem quidem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt culpa id labore voluptates odio quasi iusto alias, molestias, commodi earum aperiam officia ipsum veritatis nulla architecto eligendi laboriosam exercitationem quidem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt culpa id labore voluptates odio quasi iusto alias, molestias, commodi earum aperiam officia ipsum veritatis nulla architecto eligendi laboriosam exercitationem quidem?</p>
+        <footer>
+            122 avenue Maximilien Robespierre 94400 Vitry</footer>
+    </div>
+</body>
+</html>

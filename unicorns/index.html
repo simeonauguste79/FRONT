@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Ici je relie mon fichier html à mon css -->
+    <!-- Je verifie que mes deux fichiers  sont liés en ecrivant ce code sur le css :
+        body{
+            background: yellow;
+        }
+    -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Unicorns</title>
+</head>
+
+<body>
+    <!-- I- Je détermine les zones de mon HTML :  -->
+    <!-- a/ je déclare les balise HEADER, NAV, MAIN,FOOTER 
+            code emmet => .container-fluid>nav+header+main+footer
+    -->
+
+    <div class="container-fluid">
+        <!-- avec ma class container-fluid(je prend toute la largeur de mon ecran) je vais déterminer un espace de stockage  -->
+        <nav>
+            <h3>MyUnicorn</h3>
+            <!-- ul>li>a*3 -->
+            <ul>
+                <li>
+                    <a href="">Le principe</a>
+                </li>
+                <li>
+                    <a href="">Nos licornes</a>
+                </li>
+                <li>
+                    <a href="">Nous trouver</a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+        <header>
+            <h1>Un jour, une licorne</h1>
+            <img src="img/rainbow.png" alt="arc-en-ciel">
+        </header>
+        <main class="container">
+            <!-- Je mais la class container pour pouvoir placer la balise "<main></main>" au milieu de ma page -->
+            <!-- section*3 -->
+            <section class="unicorn">
+                <h4>Le principe</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante
+                    euismod eleifend.
+                    Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum
+                    interdum vestibulum.
+                    Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis.
+                    Nullam quis
+                    turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod,
+                    cursus leo.
+                    Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar.
+                    Mauris sodales
+                    sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor.
+                    Proin rhoncus
+                    risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin
+                    sed.</p>
+                <p>Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu
+                    iaculis.
+                    Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque
+                    bibendum mi.
+                    Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.</p>
+            </section>
+            <section class="unicorn">
+                <!-- h4+div*5 -->
+                <h4></h4>
+                <div class="img">
+                    <img src="img/photo1.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="img/photo2.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="img/photo3.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="img/photo4.jpg" alt="">
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section>
+                <div></div>
+                <div></div>
+                <div class="clear"></div>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+
+</body>
+
+</html>

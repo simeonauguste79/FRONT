@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+
+
+
+html, body {
+
+    padding: 0;
+
+    margin: 0;
+
+    /* background-image: url(../img/woddPlank.jpg); */
+
+    /* background-repeat: repeat-x; */
+
+    background-color:#ABEBC6;
+
+    background-size: auto 600px;/*definit la taille des images d'arrière plan
+
+    pour l'élément.*/
+
+}
+
+
+
+/* div container */
+
+#container {
+
+ width:1000px;
+
+ margin:auto;
+
+}
+
+
+
+header {
+
+    background-image: url(../img/woddPlank.jpg);
+
+    background-color:transparent;
+
+    padding-bottom: 10px;
+
+}
+
+nav {
+
+    height: 50px;
+
+    margin-bottom: 150px;
+
+}
+
+
+
+/* tous les liens en noir et uppercase*/
+
+a {
+
+    text-transform: uppercase;
+
+    color:#000;
+
+    text-decoration: none;
+
+}
+
+
+
+/* ce soir les deux head et foot */
+
+.title {
+
+    font-family: 'Caveat Brush';
+
+    font-size: 2em;
+
+
+
+}
+
+
+
+/* container de ce soir et le rectangle en pink */
+
+.rect_container {
+
+    margin: 1em;
+
+    float: left;
+
+}
+
+
+
+ul {
+
+    padding:0;
+
+    margin-top:2em;
+
+    float:right;
+
+}
+
+
+
+ul li {
+
+    float:left;
+
+    margin: 0 1em;
+
+    list-style: none;
+
+}
+
+
+
+ul li a {
+
+    font-family: 'Caveat Brush';
+
+    font-size: 1.5em;
+
+}
+
+
+
+/* petit rectangle en dessous de ce soir */
+
+.rect {
+
+    width: 2em;
+
+    height: .7em;
+
+    margin: auto;
+
+    background:#D63A69;
+
+    left: calc(50% - .35em);
+
+}
+
+
+
+/* div qui contient */
+
+.logocenter.cont {
+
+    clear: both;
+
+    width: 200px;
+
+    height:200px;
+
+    position: relative;
+
+    margin: auto;
+
+}
+
+
+
+/* triangle */
+
+.logocenter.arrow {
+
+    width: 0;
+
+    height: 0;
+
+    border-style: solid;
+
+    border-width: 0 165px 165px 0;
+
+    top: 20px;
+
+    border-color: transparent #D63A69 transparent transparent;
+
+    position: absolute;
+
+}
+
+
+
+/* le cerf */
+
+.logocenter.img {
+
+    background-image: url('../img/cerf.svg');
+
+    width:100%;
+
+    height: 100%;
+
+    position: absolute;
+
+    z-index: 2;/* definit le "z-order" d'un element positionné et de
+
+    ses éléments fils ou de ses éléments flexibles. Lorsque les éléments se che-
+
+    -vauchent le z-order détermine l'ordre des différentes couches.*/
+
+}
+
+
+
+/* la fleche */
+
+#triangle {
+
+    border-bottom: 5px solid #D63A69;
+
+    border-right: 5px solid #D63A69;
+
+    width: 40px;
+
+    height: 40px;
+
+    transform: rotate(45deg);
+
+    margin:150px auto 0;
+
+}
+
+
+
+/* change le curseur qui n'a pas la souris  au-dessus */
+
+#triangle:hover, i:hover {
+
+    cursor: pointer;
+
+}
+
+
+
+/* titres en arial et les centrer */
+
+h1, h2, h3 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-transform: uppercase;
+
+    text-align: center;
+
+    width:100%;
+
+}
+
+
+
+/* qui contient l'image et titre et description */
+
+.headline {
+
+    background: beige;
+
+    width: 100%;
+
+    height: 400px;
+
+}
+
+
+
+.headline .rect_container {
+
+    text-align: center;
+
+    width: 100%;
+
+    margin:0;
+
+}
+
+
+
+.headline img {
+
+    display: block;
+
+    margin:auto;
+
+}
+
+
+
+.headline p {
+
+    display: inline-block;
+
+    text-align: center;
+
+    width: 100%;
+
+}
+
+
+
+.headline a {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.linkpink {
+
+    color: #D63A69;
+
+}
+
+
+
+/* change la taille et l'image pour chaque div et le positionner */
+
+#storyy {
+
+    float: right;
+
+    width: 60%;
+
+    background: url(../img/asperge.jpg);
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    height: 100%;
+
+}
+
+
+
+#storytext, #local {
+
+    float: left;
+
+    width:30%;
+
+    margin:2% 5%;
+
+}
+
+
+
+#freshh {
+
+    float: left;
+
+    width: 70%;
+
+    height: 100%;
+
+    background: url(../img/soap.jpg);
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    height: 100%;
+
+}
+
+
+
+#fresh {
+
+    float: right;
+
+    width: 20%;
+
+    margin:50px 5%;
+
+}
+
+
+
+#locall {
+
+    float: right;
+
+    width: 60%;
+
+    background: url(../img/moule.jpg);
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    height: 100%;
+
+
+
+}
+
+
+
+#last {
+
+    background-image: url(../img/eggs.jpg);
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    width: 100%;
+
+    height: 500px;
+
+}
+
+
+
+/* footer */
+
+footer {
+
+    clear: both;
+
+    background-image: url(../img/pattern.jpg);
+
+    position: relative;
+
+    padding: 100px 0;
+
+
+
+}
+
+
+
+/* positionner ce soir et addresse */
+
+#ftr {
+
+    display: inline-block;
+
+    margin:10px;
+
+    text-align: center;
+
+}
+
+
+
+#social {
+    float: right;
+    color: #D63A69;
+    font-size: 1em;
+    position: absolute;
+    right:10px;
+    bottom: 100px;
+}
+
+i {
+
+    margin:2px;
+
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LES OPERATEUR</title>
+    <style>
+        body{
+        font-weight: bold;
+        font-size: 2rem;
+        color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var operation = 1 + 2;
+        document.write(operation + "<br>");
+        maChaine = "je m'appelle" + "Eva";
+        document.write(operation + "<br>");
+        //La précedence des operateurs, la multiplication se fait avant l'addition
+        var operation2 = 2 + 3 * 5;
+        document.write(operation2 + "<br>");
+        //On altere les précedences avec les parenthèses
+        var operation3 = (2 + 3) * 5;
+        document.write(operation3 + "<br>");
+
+
+        /********************************************LE MODULO**********************************************************************/
+
+        var operation4 = 10 % 2;
+        document.write(operation4 + "<br>");
+        //Renvoie zero car il n'y apas de reste dans la division 10/2 = 5
+        var operation5 = 17% 3;
+        document.write(operation5 + "<br>");
+        //renvoie 2, car 17/3 5 et reste 2
+
+        var monVehicule1 = "voiture";
+        var monVehicule2 = "camion";
+        document.write(monVehicule2 === "velo") + "<br>";
+        //operateur de comparaison: renvoie les booléen true ou false
+        //signe triple (===) = égalité stricte valeur (camion) et le type string sont égaux ou pas
+
+        monChiffre = "20";
+        document.write(monChiffre === "200") + "<br>";
+        // Ici on al a valeur 20 et dans la variable une chaine , on demande si la variable monChiffre vaut 20 et est number 
+        //la condole renvoie 
+        // Le signe de double égalité (==) => teste l'eglité en terme de valeur et non du type
+        //Le signe de la trouble égalité (===), texte par contre le type et la valeur
+
+        var unChiffre = 3;
+        document.write(unChiffre !== 2) + "<br>"; 
+        //le !== veut dire est-ce qu'il est different de 2 ? ! c'est le non !== ==> non égal
+        //! ===> NON
+        //!= NON EGAL, est different de 
+        //!=== NON strictement égal
+
+        //true, car 2 est bien strictement different de 3
+        //Une autre façon d'écrire le NOT
+        var unDernierChiffre = 4;
+        document.write( !(unDernierChiffre === 4)   );
+        //Renvoie false car unDernierchiffre est égal à 4, donc il n'est pas different de 4
+        
+
+        
+       
+
+
+
+
+
+
+    </script>
+</body>
+</html>

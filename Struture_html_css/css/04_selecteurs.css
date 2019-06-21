@@ -1,0 +1,54 @@
+body{
+    font-size: 25px; /* taille de police*/
+}
+h1{
+    background-color: yellow;
+    color: black;
+}
+section p{
+color: red; /* Tous les "p" à l'interieur de la balise "selection"*/
+}
+section p:first-child{
+    color: blue; /*Le premier <p>*/
+}
+sectio p: last-child{
+    Color: lightgreen; /* Le dernier <p>*/
+}
+section p:nth-child(even){
+    color: purple; /* Cible les <p> pairs*/
+}
+section p:nth-child(odd){
+    color: pink; /* Cible les <p> impairs*/
+}
+section p:nth-child(3), section p:nth-child(10){
+     color: orange; /*Je cible les <p> 3 et 10 en m^me temps*/
+}
+.zone1{ /* pour cibler une classe en Css on met un point*/
+color: darkgreen;
+}
+.zone2{
+    color: lightblue;
+}
+.line{ /* */
+   color: brown;
+   font-size: 45px;  
+}
+#zone3{
+    /* Pour appeler un ID en CSS, on met un dièse*/
+    background-color: #f5deb3;
+}
+#zone3:after{/* rajouter du contenu après l'ID zone3*/
+content:" rajouter après";
+}
+#zone3:before{/* rajouter du contenu avant l'ID zone3*/
+content: " Simeon Auguste Ba ";
+background-color: cyan;
+}
+li{
+    background-color: #00ff00;
+    color: black;
+}
+li:nth-child(2){
+    background-color: rgb(241, 6, 194);
+    /* color: white; */
+}

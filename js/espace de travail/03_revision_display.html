@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html fr="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    p{
+background: forestgreen;
+/*le p étant une balise block, il prend du 100% sa largeut*/
+    }
+    strong{
+background: yellow;
+/* Strong étant un élément inline, c'est une boîte de ligne dont la largeur s'adapte au texte qu'il y a dedans */
+padding: 1rem;
+/* Les marges et padding top  */
+    }
+    em{
+background-color: thistle;
+padding: 1rem;
+display: inline-block
+    }
+    ul{
+    border: 2px crimson solid;
+    list-style: none;
+        /* Attention les ul ont un padding-left de 40px */
+        padding-left: 0;
+    }
+        li{
+border: 2px gold solid;
+display: inline-block;
+padding: 0.5rem;
+    }
+    section{
+border: 2px firebrick solid;
+width: 50%;
+padding: 1rem;
+float:left;
+/* Avec le float les div sortent du flux naturel */
+    }
+    .clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+    }
+    /* boite à outil des flottants */
+    
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit</strong> . Nobis nam earum pariatur incidunt unde, porro ad reiciendis atque repudiandae aspernatur. Doloremque similique odit ex sapiente repellat voluptatibus sed! Itaque, repellat.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur <em>Italic</em> adipisicing elit. Nobis nam earum pariatur incidunt unde, porro ad reiciendis atque repudiandae aspernatur. Doloremque similique odit ex sapiente repellat voluptatibus sed! Itaque, repellat.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam earum pariatur incidunt unde, porro ad reiciendis atque repudiandae aspernatur. Doloremque similique odit ex sapiente repellat voluptatibus sed! Itaque, repellat.</p>
+    <ul>
+        <li>Pomme</li>
+        <li>Banane</li>
+        <li>Poire</li>
+    </ul>
+    <section class="clearfix">
+        <div>UN</div>
+        <div>DEUX</div>
+        <div>TROIS</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ 
+
+<script>
+
+//ETAPE C
+var x = 1; // La variable x est la portée globale
+function a(){
+    y = 2;
+    sortie(x);
+}
+function b(){
+    var z = 3;
+    sortie(x);
+     // La variable y et z sont dans les portée locales
+}
+
+    function sortie(valeur){
+        //On crée un noeud ou (nod) p en angalis qui est un objet du document
+    var para = document.createElement('p');
+    //Ajoute ce (nod) comme enfant de la balise body
+    document.body.appendChild(para);
+    /*créer le (node) de texte qui est le contenu texte de la balise p avec la methode textContent . (on pourra aussi utiliser innhereit)*/
+    para.textContent = 'la valeur est : ' + 
+    valeur;
+    }
+sortie(x) 
+a();
+b();
+//Les deux fonctions a() et b() doivent renvoyer (la valeur x qui est à 1) car même si la fonction sortie n'est pas dans la même portée que celle dans laquelle  x est definie , x est une variable globale et donc elle est disponible dans n'importe qu'elle partie du code
+</script>
+</body>
+</html>

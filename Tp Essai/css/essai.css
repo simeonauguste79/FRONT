@@ -1,0 +1,76 @@
+
+body {
+margin: 0 auto;
+font-family: sans-serif; 
+position: relative;
+width: 800px;
+margin-left: auto;
+height: 1200px;
+background-image: url(https://images.pexels.com/photos/1020315/pexels-photo-1020315.jpeg?cs=srgb&dl=abstract-art-artistic-1020315.jpg&fm=jpg);
+color:white;
+}
+header{
+    color: white;
+
+}
+section{
+height:100px;
+width: auto;
+margin-left: auto;
+float: right;
+position: relative;
+color: white;
+}
+
+clear{
+    clear: both;
+}
+
+
+#nav
+{
+display: inline-block;
+width: 800px;
+text-align: left;
+display: inline;
+color: white;
+}
+
+#nav ul
+{
+    list-style-type: none;
+    padding-block-end: 10px;
+    color: white;
+}
+
+#nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+    color: white;
+}
+
+#nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color: wheat;
+}
+
+#nav a:hover
+{
+    color: #7c4b28;
+}
+div .aside{
+color: white;
+}
+section, aside, p{
+
+}
+footer{
+color: black;
+height: 900px;
+color: white;
+}

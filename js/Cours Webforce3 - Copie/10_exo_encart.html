@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .encart{
+            width: 250px;
+            height: 260px;
+            border:1px silver solid;
+            background: url(images/vielle_femme.jpg) no-repeat;
+            background-size: auto 100%;
+            background-position: center top;
+            position: relative;
+        }
+        .encart .desc{
+            width: 90%;
+            height: 90%;
+            background: rgba(0, 0, 0, .2);
+            position: absolute;
+            bottom: 0;
+            left: 5%;
+            color: white;
+        }
+        .rs{
+            background: rgba(255, 255, 255, .5);
+            position: absolute;
+            left: 5%;
+            top: 4px;
+            width: 90%;
+            display: none;
+        }
+        .encart:hover .rs{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="encart">
+        <div class="desc">
+            <strong>Art de vivre</strong>
+            <h2>Mimi Carof</h2>
+        </div>
+        <div class="rs">FB - Twitter - RSS</div>
+    </div>
+</body>
+</html>

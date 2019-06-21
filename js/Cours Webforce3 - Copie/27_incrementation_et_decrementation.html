@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INCREMENTAT</h1>
+    <p>Ce sont des raccourcis pour associer ou soustraire une valeur d'une variable</p>
+    <ul>
+        <li>++ ==> signifie ajouter 1 à la variable</li>
+        <li>-- ==> signifie soustraire 1 à la variable</li>
+        <li>+= 4  ===> signifie ajouter 4 à la variable</li>
+        <li>Autres variantes: =-, *=, /=, %=</li>
+    </ul>
+    <p>
+        *++ et ++x ont le même résultat à la difference après que x++ retourne la valeur de x avant d'éffectuer l'operation alors que ++x retourne la valeur de x après avoir effctué l'operation
+    </p>
+    <script>
+        var x = 5;
+        console.log(x++); // donne 5 en console mais x est maintenant égal 6
+        console.log(++x); // x est maintenant égal à 7 et donne en console 7 en console
+
+        var heure = 5; //heure devient 6
+        heure++; 
+        console.log('il est ' + heure + 'heure'); //En concatenation 
+        heure+=2 // Heure devient 8
+        console.log('il est' )
+        heure/=2; // heure devient 4
+        heure %=3; // Le signe % est l'opérateur MODULO
+    </script>
+</body>
+</html>

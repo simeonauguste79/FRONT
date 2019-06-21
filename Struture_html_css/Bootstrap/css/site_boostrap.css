@@ -1,0 +1,17 @@
+/* div{
+margin: 10px;
+border: 5px;
+width: 100%;
+} */
+body{
+background-color: aqua;
+}
+.carousel-inner img {
+
+    margin: auto;
+   
+}
+div,.container{
+    margin: auto;
+}
+ 

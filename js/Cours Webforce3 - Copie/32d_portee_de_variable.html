@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ 
+
+<script>
+
+//ETAPE D
+var x = 1; // La variable x est la portée globale
+function a(){
+    y = 2;
+    sortie(z);
+}
+function b(){
+    var z = 3;
+    sortie(y);
+     // La variable y et z sont dans les portée locales
+}
+
+    function sortie(valeur){
+        //On crée un noeud ou (nod) p en angalis qui est un objet du document
+    var para = document.createElement('p');
+    //Ajoute ce (nod) comme enfant de la balise body
+    document.body.appendChild(para);
+    /*créer le (node) de texte qui est le contenu texte de la balise p avec la methode textContent . (on pourra aussi utiliser innhereit)*/
+    para.textContent = 'la valeur est : ' + 
+    valeur;
+    }
+sortie(x) 
+a();
+b();
+/*
+Cette fois l'appel de a() et b() renverra l'erreur referenceError: z is not defined, parce que l'appel de la fo,nction sortie() et des variables qu'elle essaie d'afficher ne sont pas defginies dans les mêmes portées. Les variables sont en effet invisibles pour ces appels de fonction.
+le message d'erreur "ReferenceError: z is not defined est l'un des plus courants que vous pourrez rencontrer. S'il s'affiche et que vous êtes sûrs d'avoir defini la variable en question, verifiez qu'elle est sa sortie.
+
+Les règles de portées ne s'appliquent, ni aux boucles, ni aux instructions conditionnelles (if etc..)
+*/
+</script>
+</body>
+</html>

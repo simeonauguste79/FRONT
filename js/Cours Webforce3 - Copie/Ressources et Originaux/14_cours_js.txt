@@ -1,0 +1,82 @@
+Les variables: 
+C'est un conteneur en boîte ou un receptacle permettant de stopper de valeurs.
+Pour coùmmencer, il faut declarer une varuiable avec le mot clé (var) et en le faisanty suivre du nom de la variable.
+On declare une variable en lui donnant un nom et on lui assigne une valeur avec l'operateur signe(=) ou opérateur d'assignation.
+On a plusieurs écritures
+a = 4;
+ou 
+var = a;
+(Le mot clé var indique ici une variable globale).
+let a = 4; c'est une déclaration de variable en ES6 ( ne pas utiliser aujourd'hui dans ES5).
+Le but d'une variable c'est d'êtfre modifié dans le cours du temps.
+d = 10;
+plus tadr dans le script
+d = 8 ===> d a été éffacé en réassigner ma variable d ou j'ai écerasé ou vidé la boîte pour remplacer par la valeur (x).
+
+<script>
+    //Ici on déclare la variable 
+      var a = 10;
+      //Ici on lui réassigne une nouvelle valeur
+      a = 8;
+      //Pour tester une variable, on ouvre la console et on écrit le nom de la variableà droite des chevrons >> et on appuie sur (enter)
+    //affiche une boîtee de dialogue contenant la valeur de la variable
+    alert(a);
+    //affiche une alerte contenant la chaîne de caractère a
+    alert('avion');
+    //3eme façon de tester, afficher la variable en cosole
+    //On écrit dans le script
+    //console.log(a);
+     //Resultat, le navigateur affiche donc le chiffre 8 dans la console
+     //Alerte annonce une boîte de dialogue et console.log() affiche un resultat
+     var b = 4;
+      // Un nouvelle variableon peut écrire cette nouvelle variable sans ajouter var
+      ajoute = a + b;
+      //Afficher le resultat de ajoute dans une boîte de dialogue
+      //Afficher le resultat de ajoute dans la console
+      alert(ajoute);
+      //console.log(ajoute);
+      
+      //ajoute = a + c; c non definit !
+      //Si on texte ou faire des calculs avec une variable non definie, le navigateur affichera une erreur en console: (Reference Error:) c is not defined
+      //ajoute = A + b; Js étant sensible à la casse ===> a different de A. l'instruction suivante présente une erreur, la variable A n'esr definit et déclarée.
+      ajoute = a + b; // Le seul calcul qui fonnctionnera parce que les variables a et b sont bien déclarées.
+      //Dernier exemple de déclaration de variable
+      var maVariable;
+      maVariable = 'Eva';
+      //console.log(maVariable);
+      
+      // *On déclare la variable soustrait
+      
+      soustrait = a - b;
+      //console.log(soustrait);
+      //On affiche le resultat en console.log(); la console affiche 4
+      var message;
+      //On assigne à la variable message le contenu de la variable 'hello'
+      //Resultat: nos deux variables 'hello' et message ont même contenu
+      //"Hell World"
+      message = 'HELLO';
+      message = 'World';
+      var hello = 'hello World';
+      //alert(message);
+      prenom = "Gerard"
+      age = 22;
+      //les nombres ne prennent pas de guillemets
+      console.log(prenom);
+
+      //CONCATENATION 
+      //La concatenation, c'est ajouter une chaîne de caractèere à des variables
+      console.log(prenom  +  ' a ' + age  +  ' ans '); // console.log(variable + 'chaîne de caractèere' + variable + 'chaîne de caractère');
+      //on fait une concatenation avec l'operateur signe (+), le resulatat sera: Gérard a 22 ans
+      //Plutôt que de le présenter dans la console, on peut l'écrire sur le navigateur =>
+      // DOCUMENT WRITE
+      document.write(prenom  +  ' a <br>' + age  +  ' ans ');
+      //<br> pour faire des sauts de lignes
+      //BOOLEAN
+
+      console.log(12 <= 13); // La console repond (True)
+      //On demande au navigateur si le chiffre 12 est inferieur ou égal à 13 et le navigateur va repondre avec une valeur booléenne (True)
+      //Resultat en console = True
+      /**********************************FIN DU COURS SUR LES VARIABLES*************************************/
+
+
+  </script>  

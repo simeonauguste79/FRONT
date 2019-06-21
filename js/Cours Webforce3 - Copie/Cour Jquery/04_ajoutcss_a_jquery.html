@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajout Css A Jquery</title>
+    <style>
+    article{
+        width:200px;
+        background: gold;
+        padding: 20px;
+    }
+    </style>
+</head>
+<body>
+    <article>Contenu article</article>
+    <p class="resultat">Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid dolores, natus reiciendis fuga voluptatibus incidunt architecto quo libero, placeat, eius autem. Id ullam vero labore, ipsa veniam mollitia rem.</p>
+    <script src="js/jquery-3.3.1.min.js"></script><!--Charger la librairie-->
+    <script>
+     $(function(){
+    console.log('jquery chargé');
+     
+    
+    //On va selectionner ma balise article avec le selecteur css article
+    $('article').on('click', function(){
+    //
+    $(this).css('background-color', 'indianred');
+    //this c'est l'objet qu'on veut cliquer
+    $('.resultat').css('background-color', 'coral');
+
+
+    //Selectionner le parargraphe 
+    //Lui donner un click c'est à dire un click et dans cet élément changer sa couleur de fond et sa taille de texte
+    
+    $('.resultat').on('click', function(){
+     
+     $(this).css({
+    'background-color': 'hotpink',
+     'font-size': '5rem',
+     'transform': 'rotate(.25turn'
+     
+
+
+     });//FIN DE COMMENADE CSS
+
+
+
+    })//FIN DE LA FONCTION ('.resultat')
+    })//FIN DE LA FONCTION 
+
+     })//FIN DU SCOPE
+    </script>
+</body>
+</html>

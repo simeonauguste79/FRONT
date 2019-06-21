@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous">
+        <title>Listes</title>
+        <link rel="stylesheet" href="css/index.css">
+        
+    </head>
+    <body>
+            <!-- mon haut de site -->
+        <header>
+            <div id="logo">
+                <a href="index.html" target="_blank"><img src="images/logo.png" alt="logo html/css"></a>
+            </div>
+            <div id="slogan">
+                <h1>Mon premier site en HTML/CSS</h1> 
+            </div>
+            <div id="rs">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="clear"></div>
+        </header>
+        <!-- navigation du site -->
+        <nav>
+            <a href="index.html">Structure</a>
+            <a href="texte.html">Textes</a>
+            <a href="selecteur.html">Selecteurs</a>
+            <a href="image.html">Images</a>
+            <a href="position.html">Positions</a>
+            <a href="zoning.html">Zooning</a>
+            <a href="liste.html" class="active">Listes</a>
+            <a href="lien_menu.html">Liens</a>
+            <a href="tableau.html">Tableaux</a>
+            <a href="formulaire.html">Formulaires</a>
+            <a href="multimedia.html">Multimedias</a>
+            <a href="animation.html">Animations</a>
+            <a href="explication_flexbox.html">FlexBox</a>
+            <a href="explication.html">Figure/Figcaption</a>
+            <a href="pattern.html">Pattern</a>
+        </nav>
+        <main class="mainListe">
+            <section>
+                <h3>Les listes ul: non ordonnées</h3>
+                <ul class="fruit">
+                    <li>
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i> Fraise</li>
+                    <li>
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i> Banane</li>
+                    <li>
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i> Mangue</li>
+                </ul>
+
+            </section>
+            <section>
+                <h3>Listes imbriquées</h3>
+                <ul class="imbrique">
+                    <li class="eu"><i class="fas fa-arrow-right" aria-hidden="true"></i><span>Europe</span> 
+                        <ul >
+                            <li>Angleterre</li>
+                            <li>Islande</li>
+                            <li>Suède</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="imbrique">
+                    <li class="asie">
+                         <i class="fas fa-arrow-right" aria-hidden="true"></i><span>Asie</span>
+                        <ul >
+                            <li>Malaisie</li>
+                            <li>Japon</li>
+                             <li>Indonèsie</li>
+                        </ul>
+                     </li>
+                </ul>
+            </section>
+            <section class="ol">
+                <h3>Liste Ordonnée</h3>
+                <ol>
+                    <li>Html/Css</li>
+                    <li>JS/JQuery</li>
+                    <li>PHP/SQL</li>
+                </ol>
+            </section>
+            <section class="def">
+                <h3>Liste de définition</h3>
+                <dl>
+                    <dt>F</dt>
+                    <dt>France</dt>
+                    <dt>Finlande</dt>
+                </dl>
+
+            </section>
+        </main>
+    </body>
+</html>

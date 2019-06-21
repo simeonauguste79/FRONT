@@ -1,0 +1,72 @@
+p, body{
+    margin: 0;
+}
+main{
+    border: 2px solid pink;
+    margin: 0 auto;
+    width: 960px;
+}
+header{
+    background: crimson;
+    height: 100px;
+}
+nav{
+    background: khaki;
+    height: 30px;
+}
+section{
+    background: black;
+    margin: 20px;
+}
+footer{
+    background: cadetblue;
+    height: 50px;
+}
+.a, .b, .c, .d{
+    float: left;
+    width: 50%;
+    height: 250px;
+}
+.a{
+    background: slategray;
+}
+.b{
+    background: gray;
+}
+.c{
+    background: lightgray;
+}
+.d{
+    background: darkgray;
+}
+.clear{
+    clear: both;
+}
+
+/*************** RESPONSIVE ***************/
+@media screen and (max-width:1050px){
+    main{
+        width: 750px;
+    }
+}
+/*entre 780px et 1050px, le main fera 750px*/
+@media screen and (max-width:780px){
+    main{
+        width: 550px;
+    }
+}
+ /*entre 580px et 780px, le main fera 550px*/
+@media screen and (max-width:580px){
+    main{
+        width: 100%;
+        border: none;
+    }
+    .a, .b, .c, .d{
+        width: 100%;
+        height: 125px;
+    }
+    section{
+        margin: 0;
+    }
+}
+/*entre 0px et 580px le main fera 100% ainsi que les zones .a .b .c .d*/

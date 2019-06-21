@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .listeFruits{
+            background-color: firebrick;
+            display: none; /*On cache la la liste au chargement de la page, on va l'afficher et la cacher sur le bouton frâce au toggleClass*/
+            margin-bottom: 0px;
+        }
+        .affiche{
+            display: block;
+        }
+    
+        .boite{
+            width: 518px;
+            height: 300px;
+            background: black;
+            margin-top: 0px;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        /* Il faut habiller la boite bleue */
+        #boitebleue{
+            width: 600px;
+            height: 400px;
+            
+
+
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">affiche</button>
+    <ul class="listeFruits">
+        <li>anana</li>
+        <li>mangue</li>
+        <li>papaye</li>
+        <li>orange</li>
+    </ul>
+    <div id="boiteBleue">salut</div>
+    
+    <!--
+        1_Ajouter une balise button et sa class="btn"
+        2_Charger jquery et afficher jquery en console
+        3_créer la fonction afficheMasque() qui sera executé au clic sur .btn cette fonction fait un toogleClass avec la class affiche sur listefruit
+    -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            console.log('jquery chargé');
+        //On fera avec la fonction anonyme
+       //Ici on ajoute un événementy click sur l'élément qui a la class .btn et on execute une fonction anonyme
+        $('.btn').on('click', function(){
+
+    //On ajoute un toggleClass pour ajouetr et supprimer la class affiche sur l'objet  qui a la class .listefruit
+    $('.listeFruits').toggleClass('affiche');
+
+
+        })
+        
+        
+        
+        
+        })//FIN DU SCOPE JQUERY
+    </script>
+    <button></button>
+</body>
+</html>

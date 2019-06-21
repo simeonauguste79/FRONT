@@ -1,0 +1,191 @@
+/****************************************************************************REGLAGE***********************************************************************************/
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border: 0.3vh solid;
+}
+
+header{
+    height: 6vh;
+    background: blue;
+    padding: 1vh;
+    /*Vh pour gérer la responsive des éléments en hauteur (viewport height)
+    Vw pour gérer la responsive des éléments en hauteur (viewport width)*/
+}
+nav{
+    height: 3vh;
+    background:red;
+    text-align: center;
+    font-size: 2vh;
+    color: #fff;
+}
+nav a:hover{/*NAV A cible les liens du menu, ils n'ont pas de taille donc, ils occupent la place de leur contenu*/
+background: #73ADCE;
+text-decoration: none;
+/*efface le soulignement des liens <a></a>*/
+padding: 0.5% 0.8;
+}
+
+.m1,.m2, .m3, .m4{
+    height: 20vh;
+    width: 38%;
+    padding: 5%;
+    margin: 1%;
+    float: left;
+}
+.m1{
+    background:orange;
+}
+.m2{
+    background: green;
+}
+.m3{
+    background:greenyellow;
+}
+.m4{
+    background:pink;
+}
+footer{
+    height: 6vh;
+    background:blue;
+}
+/****************************************************************************responsivE***********************************************************************************/
+
+@media(max-width: 500px){
+    header{
+        height: 6vh;
+        background:violet;
+    }
+    nav{
+        height: 3vh;
+        background:rgb(14, 187, 240);
+    }
+    .m1, .m2, .m3, .m4{
+        height: 20vh;
+        width: 86vh;
+        margin: 0 auto;
+    }
+
+    .m1{
+        background:#B4AF91;
+    }
+    .m2{
+        background:#046380;
+    }
+    .m3{
+        background:#F6E497;
+    }
+    .m4{
+        background:#B5E655;
+    }
+    footer{
+        height: 6vh;
+        background:#8E3557;
+    }
+}
+@media(max-width: 768px){
+    header{
+        height: 7vh;
+        background:purple;
+    }
+    nav{
+        height: 3.5vh;
+        background:rgb(14, 187, 240);
+    }
+    .m1, .m2, .m3, .m4{
+        height: 20vh;
+        float: left;
+    }
+
+    .m1{
+        background:#B4AF91;
+    }
+    .m2{
+        background:#046380;
+    }
+    .m3{
+        background:#F6E497;
+    }
+    .m4{
+        background:#B5E655;
+    }
+    footer{
+        height: 7vh;
+        background:#8E3557;
+
+    }
+}
+@media(max-width: 992px){
+    header{
+        height: 8vh;
+        background:purple;
+    }
+    nav{
+        height: 4vh;
+        background:rgb(14, 187, 240);
+    }
+    .m1, .m2, .m3, .m4{
+        height: 30vh;
+        float: left;
+    }
+
+    .m1{
+        background:#B4AF91;
+    }
+    .m2{
+        background:#046380;
+    }
+    .m3{
+        background-size: url('../Image/image.jpg');
+    }
+    .m4{
+        background:#B5E655;
+    }
+    footer{
+        height: 8vh;
+        background: #792579;
+
+    }
+}
+@media(max-width: 1200px){
+    header{
+        height: 9vh;
+        background:purple;
+    }
+    nav{
+        height: 4.5vh;
+        background:#73ADCE;
+    }
+    .m1, .m2, .m3, .m4{
+        height: 40vh;
+        float: left;
+    }
+
+    .m1{
+        background:-moz-linear-gradient(to left, green, pink);
+    }
+    .m2{
+        background:#73ADCE;
+    }
+    .m3{
+        background:#F6E497;
+    }
+    .m4{
+        background:#B5E655;
+    }
+    footer{
+        height: 9vh;
+        background: #791527;
+
+    }
+}
+
+section{
+    margin: 1.5vh;
+}
+
+.clear{
+    clear: both;
+}

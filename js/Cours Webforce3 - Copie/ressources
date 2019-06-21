@@ -1,0 +1,55 @@
+https://caniuse.com/
+
+https://fr.wikipedia.org/wiki/Navigateur_web
+
+https://fr.wikipedia.org/wiki/Couleur_du_Web
+
+https://thenounproject.com/
+pour avoir des icones
+basic download
+for instoration 
+chercher SVG
+
+
+
+feuille de style du navigateur par défaut
+https://www.w3.org/TR/CSS2/sample.html
+ 
+body            { margin: 8px }
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+h4, p,
+blockquote, ul,
+fieldset, form,
+ol, dl, dir,
+menu            { margin: 1.12em 0 }
+h5              { font-size: .83em; margin: 1.5em 0 }
+h6              { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,
+h5, h6, b,
+strong          { font-weight: bolder }
+blockquote      { margin-left: 40px; margin-right: 40px }
+i, cite, em,
+ol, ul, dir,
+menu, dd        { margin-left: 40px }
+ol              { list-style-type: decimal }
+ol ul, ul ol,
+ul ul, ol ol    { margin-top: 0; margin-bottom: 0 }
+
+Résumé :
+body a des margin: 8px;
+tous les h1..h6 on des aussi de marges top et bottom
+les ul et les ol ont des marges et un padding-left de 40px
+
+on utilise un reset pour élaguer les différences d'affichage sur les vieux navigateurs et corriger quelques bugs d'affichage.
+
+
+LES UNITES DE VALEUR EN CSS
+
+le rem :  1rem est égal à 1 x la valeur de font-size définie pour la balise html
+Si on ne change pas la taille de la balise html on a du 16px par défaut. et donc 1rem vaudrait 16px
+
+le em : 1em est égale à 1 x la valeur de font-size de sa balise parente.
+Par exemple : le h1 fait 2em par défaut. Si le h1 est enfant de la balise body et qu'on a donné une font-size de 14px à body:
+la taille du h1  sera 2 x 14px = 28px

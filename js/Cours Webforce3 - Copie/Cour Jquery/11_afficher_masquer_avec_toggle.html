@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        border: 2px solid red;
+        height: 800px;
+        position: relative;
+    }
+    .popup{
+        width: 200px;
+        height: 160px;
+        background: silver;
+        border: 1px black solid;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <button class="btn">Affiche et cache</button>
+    <div class="popup">Ma popup</div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            console.log(('jquery chargé'));
+          $('.btn').click(function(){
+              $('.popup').fadeToggle('slow');
+          })
+        
+        
+        
+        
+        
+        
+        
+        
+        })//FIN DE SCOP JQUERY
+    </script>
+</div>
+</body>
+</html>

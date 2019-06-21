@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            border: 2px solid olivedrab;
+            margin: 0 auto;
+        }
+        p{
+        border: 1px solid black;
+        }
+        /* boite à outil des flottants */
+        .flt_l{
+        float: left;
+        }
+        .clear{
+            clear: both;
+            display: table;
+        }
+        .clearfix:after{
+        content: 'FAUX FOOTER';
+        clear: both;
+        display:table;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <img src="images/fete-montagne2017.jpg" alt="flt_l">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam eligendi delectus officia veritatis, facilis numquam, fuga voluptatibus explicabo cupiditate, ducimus nihil libero repellendus velit excepturi similique consequuntur nulla ab?
+      </p>
+      <strong class="clear">Le cervin</strong>
+      <img src="images/fete-montagne2017.jpg" alt="flt_l">
+      <!--<footer class="clear"></footer>
+    </div>-->
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    img{
+        width: 320px;
+    }
+    </style>
+</head>
+<body>
+    <button class="btnDisparait">Faire disparaitre image</button>
+    <button class="btnFaireApparaitre">faire apparaitre</button>
+    <p>
+        <img src="img/image_1.jpg" alt="image_1">
+        <img src="img/image_2.jpg" alt="image_2">
+        <img src="img/image_3.jpg" alt="image_3">
+        <img src="img/image_4.jpg" alt="image_4">
+    </p>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function(){
+        console.log('Jsquery chargé');
+    
+    $('.btnDisparait').click(function(){
+        //On va faire appelle à une fonction call-back
+
+    $('img').first().hide('slow', function hideNextOne(){
+        $(this).next('img').hide('slow', hideNextOne);
+    })
+
+    })//FIN DE DISPARAITRE
+    
+    $('.btnFaireApparaitre').click(function(){
+        //On va faire appelle à une fonction call-back
+
+    $('img').first().show('slow', function showNextOne(){
+        $(this).next('img').show('slow', showNextOne);
+    })
+
+    })//FIN DE DISPARAITRE
+
+
+
+    })//FIN DU SCROLE JSQUERY
+
+
+
+    </script>
+</body>
+</html>

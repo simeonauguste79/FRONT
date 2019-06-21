@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a:link{
+    
+    color: orange;
+    text-decoration: none;
+        }
+        a:visited{
+     color: blue;   
+        }
+        a:hover, a:focus{
+    text-decoration: underline;
+    outline:thin solid gold;
+    
+        }
+        a:active{
+ color:crimson; 
+        }
+        div{
+            padding: 16px;
+        }
+    :target{
+    border-left: 4px silver solid;
+    /* ça colorise les écrans le : target */
+    }
+    #chapitre1:target{
+    background: pink;
+    }
+    #chapitre2:target{
+    background: paleturquoise;
+    }
+    #chapitre1:target{
+    
+    }
+    [title]{
+    font-weight: bold;
+    }
+    
+    /* selecteur d'attribut: cibler tous les liens dont l'attribut href commence par http 
+    Rappel CSS:target
+    Un selecteur d'attribut:target
+    l'exemple suivant selectionne */
+    [href^=http]{
+border-bottom: 3px dotted violet;
+background-color: silver;
+margin-bottom: 2rem; 
+/* les margin et les padding top et bottom ne fonctionnent pas avec les display: inline, si je veux mettre un padding et ou une margin sur un lien, il faudra transformer son display */
+display: inline-block;
+padding: .5rem 2rem .5rem .5rem;
+background-image: url(images/lien_externe.svg);
+background-repeat: no-repeat;
+background-position: right .25rem;/*Background-position: 0 0*/
+background: coral;
+background-size: 1.5rem auto; /* largeur de 1.5rem et la hauteur est automatiquement calculée en fonction de la largeur */
+/* la même chose en forme d'écritue courte */
+/* background: silver url(images/lien_externe.svg) no-repeat .5rem; */
+/* couleur de fond|chemin vers l'image|repetition|position x|position y */
+
+}
+        
+    </style>  
+</head>
+<body>
+<a href="http://apple.com" title="lien vers apple">lien vers Apple</a>
+<a href="http://transavia.com" title="lien vers transavia">Lien vers transavia</a>
+<!-- Le lien absolu: vers une page à mon site , l'attribut href contient toujours une adresse web complete avec le protocole http -->
+<nav>
+    <a href="#chapitre1">chapitre1</a>
+    <a href="#chapitre2">chapitre2</a>
+    <a href="#chapitre3">chapitre3</a>
+</nav>
+<section>
+<a href="#">Faux lien</a>
+
+<div id="chapitre1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quos sed vero alias laboriosam. Suscipit debitis animi enim amet aut nam minus vitae doloremque. Architecto magni quae cupiditate commodi ipsam.</div>
+<div id="chapitre2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quos sed vero alias laboriosam. Suscipit debitis animi enim amet aut nam minus vitae doloremque. Architecto magni quae cupiditate commodi ipsam.</div>
+<div id="chapitre3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quos sed vero alias laboriosam. Suscipit debitis animi enim amet aut nam minus vitae doloremque. Architecto magni quae cupiditate commodi ipsam.</div>
+</section>
+</body>
+</html>

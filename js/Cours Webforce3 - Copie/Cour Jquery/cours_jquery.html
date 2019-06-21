@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Jquery, une librairie javasript poutr gagner en productivité <br>
+'Write les, Do more' = écrire mois, faire plus</h1> 
+<h2>Version actuelle v3.3.1</h2>
+<p>Jquery, c'est une biblioteque javascript appelé aussi un framework en anglai. C'est une boîte à outil de blocs de code réutilisable. <br>
+Elle estgb rapide, petite donc legere riche en fonctionnalité <br>
+Elle simplifie considerablement la navigation et la manipulation dans le DOM ou dans document HTML <br>
+La gestion des événements, l'animation et ajax. <br>
+Ajax = (Asychronus, Javascript and XML). <br>
+grâce à une API programming interface facile à utiliser et qui est très testé pour nous et qui fonctionne sur beaucou de navigateurs. <br>
+Jquery est elle_même codé en javasript. C'est  très polyvalent et extensible. Elle a changé la vie, la façons de travailler de nombreux developpeurs. </p>
+<p>On a des fonctions toutes faites qu'on peut optimi</p>
+<ul>
+    <li>Fonction toutes faites qu'on utilisera: appel Ajax; boucles, animation</li>
+    <li>resoudre beaucoup de problèmes de compatibilité navigateurs. <br>
+        Jquery a des ployfils integrés </li>
+    <li>Une lecture de code plus simple, les problemes de compatibilité sont gérés par la librairie</li>
+</ul>
+<p>Attention Jquery n'est pas à appliquer sur un code sale le tg Soup</p>
+<h2>Jquery a des millions de plugin additionnels</h2>
+<h2>Jquery UI: User Interface (interface utilisateur) <br>
+Version actuelle UI1.12</h2>
+<p>C'est un ensemble d'interface utilisateurs, c'est à dire des menus d'effets de widgetsde themes conçus à partir de la librairie </p>
+<p>Si on juste besoin d'un selecteurde date dans un formulaire, Jquery est un choix ideal
+    https://jqueryui.com/datepicker/
+</p>
+<hr>
+<h1>Comment charger dans son projet dans une page web</h1>
+
+<h3>Jquery Mobile 1.4.5: est un framework ou interface utilisateur optimisée pour les écrans tactiles.</h3>
+<p>La methode et la plus simple consiste à telecharger la librairie jquery.js sur le site officiel: <a href="https://jqueryui.com/accordion/">le site officiel</a></p>
+
+<p>Prendre le premier lien de download (Dothe compression</p>
+    <script src="chemin relatif vers notre fichier jquery.js">
+    </script>
+    <p>Ensuite on utilise une balise script interne (ou un lien vers notre fichier javascript</p>
+    <p>Prendre le premier lien de download faire un click droit sur download the compressed production jquery 3.3.1 et choisir enrregistrer la cible du lien sous: (Dothe compression</p>
+    <p>Il faut enrregistre ce fichierjquery3.3.1.js dans le dossier js que vous aurez à la racine de votre site </p>
+    <h3>Selecteur en jquery</h3>
+    <p>Le coeur de Jquery se trouve dans la selection d'éléments pour ensuite executer des méthodes dessus</p>
+    <p>
+        $(selecteur ) accepte en argument tout selecteur CSS, Jquery nous renvoie ensuite une collection d'un ou plusieurs éléments dans un objet jquery.
+        <p>
+            Si ('div') selectionne tous les div, 
+            $('.titre') selectionne tous les éléments qui ont la class"titre.
+        </p>
+        <p>
+            cette enveloppe jquery est celle qui donne accès à toutes les fonctionalités.
+        </p>
+        <ul>
+            <li>cette enveloppe jquery est celle qui donne accès à toutes les fonctionalités de jquery</li>
+            <li>Modifier les contenus HTML</li>
+            <li>aFFICHER LE CACHER DES 2L2MENTS </li>
+            <li>Les animer etc..</li>
+        </ul>
+     <p>
+         Tous les éléments selectionnés en javascript pur (document.getelementByTd, querySelector etc) sont des éléments DOMet tous ceux selectionnés avec $('...') sont des éléments DOM dans une enveloppe Jquery
+     </p>
+    </p>
+    <h3>Jquery dispose de plusieurs methodes pour parcouruir l'arbre du document donc le DOM</h3>
+    <p>$('#boite) selectionne l'unique élement qui l'Id "boite"</p>
+    <ul>
+        <li>children() parcourt les enfants </li>
+        <li>find() parcourt les descendants</li>
+        <li>next() renvoie le voisin suivant </li>
+        <li>prev() renvoie le voisin precedent</li>
+        <li>parent() renvoie le parent</li>
+        <li>eq() renvoie parmi une liste d'élement, celui qui se trouve à l'index fourn</li>
+        <li>addClass(): ajoute une class</li>
+        <li>removeclass(): retire une class </li>
+        <li>toggleClass(): interrupteur </li>
+        <li>hasClass(): texter l'existance d'une class </li>
+        <li></li>
+        <li></li>
+    </ul>
+    <h2>LE EVENEMENTS</h2>
+    <p>La plupart des interactions de l'utilisateur avec la opage web peuvent être interceptées et une a    ction lancée en retour .</p>
+    <p>On peut dire une fonction de s'executer quand l'utilisateur clique sur un bouton ou bien quand on scrollle la fenêtre ou bien encore quand il appuie sur une touche du clavuier</p>
+    <ul>
+        <li>mouse(souris): <br>
+        click: au click sur l'élément <br>
+    mouseenter: lorsque la souris passe par dessus la zone de l'élment <br>
+ùmouseleave: lorsque la souris sort de cette zone</li>
+<li>
+    keyboard(le clavier): <br>
+    keydown: une touche de clavier a été enfoncée <br>
+    keyup: une touche de clavier a été relachée
+</li>
+<li>
+    window(la fenêtre du navigateur) <br>
+    scrol: defilement de la fenêtre <br>
+    resise: redimensionnement de la fenêtre <br>
+</li>
+<li>
+    form (les formulaires) <br>
+    change: pour les élements <input>,<select>, quand l'utilisateur change une de leur valeur  <br>
+        focus et blur: lorsque la souris est dans l'input ou sort de l'input <br>
+
+</li>
+<li>
+    document(le contenu DOM) <br>
+    DOMContentLoaded: lancé lorsque le document HTML est completement chargé et analysé sans attendre que les images et le css soient chargés
+</li>
+    </ul>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function(){
+      console.log('Jquery est bien chargé')
+
+    })
+    </script>
+</body>
+</html>

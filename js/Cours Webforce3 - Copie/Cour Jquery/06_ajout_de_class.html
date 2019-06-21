@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tailleTexte2{
+            font-size: 2em;
+        }
+        .couleurFond{
+            background-color: teal;
+        }
+        .carre{
+            width: 200px;
+            height: 200px;
+            background-color: forestgreen;
+            margin-top: 50px;
+        }
+        .tourne{
+            background-color: gold;
+            transform: rotate(.5turn) scale(.5);
+            transition: 1s;
+            
+        }
+    </style>
+</head>
+<body>
+    <strong>Je suis gras</strong><br>
+    <em>Je suis de l'italic</em><br>
+    <u>Je suis du texte souligné</u>
+    <button>Retire la classe</button>
+    <div class="carre">Je suis un carré</div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function(){
+        console.log('jquery chargé');
+    
+    //Selectionner la balise u et lui donner la class.taille avec la methode jquery .addClass
+
+    $('u').addClass('tailleTexte2');
+    //recuperer la class coulleur on click sur la balise em, on ajoute la classe .point couleurfond à la balise strong
+    
+    $('em').on('click', function(){
+        $('strong').addClass('couleurFond');
+    })
+    //Ici on declare une fonction stockée dans la variableretireClass
+    var retireClass = function(){
+        $('u').removeClass();
+    }
+    //Ici on execute cette fonction lors du clic de la balise button
+    //on va aller utiliser la toggleclass
+    $('button').on('click', retireClass);
+
+    //carre
+    //Créer une fonction qui doit faire tourner le carré qui sera declenché executé au clic sur le carré
+    //Cette fonction ajoute la classTourne au carré 
+    var tourneCarre = function(){
+        $(this).toggleClass('tourne');
+        //On declare la fontion
+    }
+    //ici on execute la fonction au click
+    $('.carre').on('click', tourneCarre);
+    })//FIN DE SCOOP JQUERY
+    
+    </script>
+</body>
+</html>

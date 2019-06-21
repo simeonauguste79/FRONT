@@ -1,0 +1,42 @@
+.zoneAdaptative{
+    background: #F89B97 ;
+    color: white;
+    padding: 10px;
+}
+body{
+    background: cadetblue;
+}
+@media screen and (min-width:768px){
+    .zoneAdaptative{
+        width: 750px;
+        background: crimson;
+    }
+    body{
+        background: #F89B97
+    }
+}
+@media screen and (min-width:992px){
+    .zoneAdaptative{
+        width: 950px;
+        height: 50px;
+        background: DARKKHAKI;
+    }
+    .zoneAdaptative p{
+        display: none;
+    }
+    body{
+        background: crimson;
+    }
+}
+@media screen and (min-width:1200px){
+    .zoneAdaptative{
+        width: 1170px;
+        background: cadetblue;
+    }
+    .zoneAdaptative p{
+        display: block;
+    }
+    body{
+        background: DARKKHAKI;
+    }
+}

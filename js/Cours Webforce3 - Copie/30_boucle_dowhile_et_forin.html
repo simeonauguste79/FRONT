@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LA BOUCLE DOWHILE ET FORIN</h1>
+    <h3>La boucle dowhile</h3>
+    <p>Elle ressemble à la boucle while sauf que dans le de la boucle est toujours executée au moins une fois. <br>
+    Dans le cas d'une boucle while, si la condition n'est pas validée, la boucle n'est pas excutéeune fois, puis la condition est testée pour savoir si la condition doit continuer
+    </p>
+    <strong>Structure de do while</strong>
+    <pre>
+do{
+instruction 1;
+instruction 2;
+instruction 3;
+
+}
+while(condition)
+
+    </pre>
+
+    <strong>On voit bien la difference avec la boucle while , l'utilisation de la boucle do...while est très peu frequenté</strong>
+    <h3>La boucle for...in</h3>
+    <p>Permet de parcourir un objet</p> 
+
+
+
+
+    <script>
+         frigo = {
+             fruits : ['citron', 'orange'],
+         legumes : ['patates', 'tomates']
+        };
+
+        for(type in frigo){// parcourt chaque clé de l'objet. Type aura fruits et tomate comme valeurs.
+        document.write(frigo[type]);
+
+        }
+    </script>
+</body>
+</html>

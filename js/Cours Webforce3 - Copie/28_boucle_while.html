@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LES BOUCLES (for et while</h1>
+    <p>Les boucles for et while servent à repeter une ou plusieurs lignes de code</p>
+    <h2>LA BOUCLE WHILE</h2>
+    <p>La boucle while s'appelle en javascript (repeter tant que) une condition est vraie</p>
+    <strong>STRUCTURE DE LA BOUCLE while</strong>
+    <pre>
+        while(condition){
+            instruction 1;
+            instruction 2;
+        } pre ==> une présentation d'exemple en html
+    </pre>
+
+    <script>
+        //tant que x est inferieur à 20, on entre dans la boucle ===> on réalise l'instruction ajoute 5 à x
+        var x = 0;
+        while(x<20){
+            x+=5; //ajoute 5 à la valeur x
+            //On peut mettre un console.log(x);
+            //console.log(x);
+            //Quand on est dans la boucle, la console afffichera la valeur de x à chaque tour de boucle
+        }
+        console.log(x); //Ici, on affiche la valeur finale après que la boucle a été executée donc on aura 20 en console.
+
+        /*while ne prend qu'un seul paramètre: la condition à verifier (tant que x < 20). Tant qu'elle est vraie , la boucle continue de s'executer
+        Ici la boucle sera executée 5 fois x aura la valeur finale 20
+        Ps: Il faut s'arranger que la solution ne soit plus vraie sinon, la boucle se repeterait jusqu'à l'infini*/
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Je fais mon zoning */
+
+.container-fluid{ /*Je règlr la dimension mon espace de stockage dans mon Css*/
+/* background: red; */
+height: 121vh;
+width: 100vw;
+}
+nav{ /*Je règlr la dimension ma barre de menu de ma nav mon Css*/
+background: #c55394;
+height: 10vh;
+}
+header{ /*Je règlr la dimension ma barre de menu de mon header mon Css*/
+/* background: azure; */
+height: 15vh; 
+background: url("../img/background.png") no-repeat;  
+margin: auto;
+}
+.container{ /*Je règlr la dimension ma barre de menu de mon .container mon Css*/
+background: #fff;
+height: 87vh;
+width: 76vw;
+margin: 0 auto;
+}
+
+.unicorn{
+background: rgb(196, 200, 255);
+height: 20vh;
+}
+
+footer{
+background: #c55394;
+height: 5vh;
+margin-top: 5vh;
+}/* Pour les images fixes, il faut passer par le CSS pour l'integration */
+/* 2J'integre les élements */
+/* On va appeler le Body */
+body{
+background: url("../img/background.png"); 
+     /*background ====> pour pouvoir utilser certaines propriétés*/
+} 
+
+.logo{
+text-align: center;
+height: 20vh;
+}
+/* Header */
+.logo h1{
+text-align: center;
+margin-top: -17vh;
+font-family: 'Courgette', cursive;
+font-size: 200%;
+font-style: italic;
+color: #c55394;
+margin-left: 12vh;
+}
+/* Position relative: je prends la main sur l'aplmecement de l'élémement je manipule avec des propriétés associées top, left, right, bottom */
+/* Nav */
+nav h3{
+float: left;
+/* avecavecla proprieté float, j'oblige mon élément à n'occuper qu'une partie de l'espace pour que l'élément qui le suit soit collé à ses côtés. */
+}
+nav ul{
+/* Avec la display, j'oblige mon élément liste à se positionner à l'horizontal */    
+display: flex;
+/* Avec l'élément list style, je modifie l'apparence de ma liste , ici je supprime les puces */
+list-style: none; 
+float: right;  
+
+}
+.clear{
+clear: both;
+}
+/* Avec la propriété clear, j'annule la propriété float et les éléments html reprennent leur comportement naturel  */
+.img{
+float: left;
+height: 5vh;
+/* justify-content: center; */
+text-align: center;
+}
+.img img{
+display: inline-block;
+height: 18vh;
+margin: 1vw;
+position: relative;
+left: 14vw; 
+}
+.maps{
+float: left;
+}
+#formulaire{
+text-align: center;
+float: left;
+display: inline-flex;
+}

@@ -1,0 +1,123 @@
+
+extension webdeveloper tools chris pederick
+
+
+https://caniuse.com/
+
+https://fr.wikipedia.org/wiki/Navigateur_web
+
+https://fr.wikipedia.org/wiki/Couleur_du_Web
+
+https://thenounproject.com/
+pour avoir des icones
+basic download
+for instoration 
+chercher SVG
+
+https://flexboxfroggy.com/#fr
+
+DICO CSS du W3C
+https://www.w3.org/TR/css-2010/
+
+
+
+INTRO JAVASCRIPT    
+le javscript (développement coté client - front-end dévelopement)
+est tout ce qui est traité par le navigateur et affiché au visiteur (user)
+(nous en tant que dévelopeur on est auteur (autor en anglais))
+
+le dev javascript permet principalement de réagir aux actions de l'utilisateur,
+directement dans le navigateur.
+
+Ajax : Ansychronous Javascript And Xml : permet les changements sans reload de page (ex : chargement des datas)
+
+Les qualités requises : la RIGUEUR (primordial dans l'écriture du code, les navigateur trébuchent sur tout code mal écrit (majuscules, accolades, parenthèses, les expaces, les points))
+Faire très attention et se relire constamment.
+Valider sur le validateur W3C, TESTER TÔT et SOUVENT.
+Un signe écrit 2 fois au lieu d'une peut inverser totalement la signification du code.
+
+L'organisation (rangement des fichiers et dossiers, nomenclature, commentaires, faire du code simple, commenté et lisible)
+La CAPACITE d'ABSTRACTION : Un dévelopeur quand il fait face à un problème à résoudre doit savoir fractionner celui-ci en morceaux plus digestes et garder une vue globale de l'ensemble de ce qu'il écrit.
+
+AVANT  de commencer à écrire il doit être capable de s'imaginer le résultat du code qu'il va éxécuter.
+
+
+INTRODUCTION JAVASCRIPT
+
+La version actuelle de javascript, "JS", ES6 est une implémentation d'un language de script appelé EcmaScript (standardisé dans les années 90 par Netscape)
+Inventé par Brendan Eich, confondateur du projet Mozilla
+ES5 est utilisé depuis 2009, on arrive à ES6 aujourd'hui.
+
+Qu'est ce que Javascript permet de faire : 
+- Définir une action au clic 
+- vérifier des données entrée dans un formulaire
+- Détecter des changements de page et lancer des alertes
+- Stocker des valeurs utiles dans des variables 
+- Faire des opérations sur des morceaux de texte (chaine de caractères / string)
+- Permet d'éxécuter du code en réponse à certains évènements se produisant sur une page web 
+- Crée ou déclancher des animations
+- Faire des carousels, des menus déroulants, des galeries d'images interractives, gérer la vidéo et l'audio
+- Créer des jeux, des graphiques 2d et 3d (Datavisualisation),des applications complètes fondées sur des bases de données, des applications mobile (online ou offline)
+
+JS est un language compact en restant souple.
+
+Les développeurs ont écrit de nombreux outils sur le coeur de Javascript (core), créant des fonctionnalités supplémentaires 
+
+Parmi ces outils : 2 catégories d'API : les API navigateurs et les API tierce partie
+API :  Application Programing Interface, et en français Interfaces de Programmation d'application pour navigateurs.
+Ce  sont des blocks de code déjà prêts, qui permettents au développeur de crée plus facilement des programmes (boite à outil déjà développés et testés)
+C'est comme du code en "kit" pour la programmation. Menuisier vs IKEA
+
+Les APIs navigateur font partie intégrante du navigateur, et peuvent accéder à des données de l'environnement informatique (l'ordinateur, le mobile), ou faire d'autres choses complexes.
+Par exemple :
+L'API DOM (Document Object Model) nous permet de manipuler du HTML et du CSS (créer, modifier, supprimer du HTML, appliquer des nouveaux styles à la page de façon dynamique)
+Exemple Créer une popup, charger des nouveaux contenus dans une page, il s'agit de l'action du DOM.
+https://fr.wikipedia.org/wiki/Document_Object_Model
+
+
+
+API de Géolocalisation : Permet de récupérer des données géographiques (position en longitude / latitude de notre user)
+https://developer.mozilla.org/fr/docs/Using_geolocation
+
+APIs Canvas et WebGL :  permet de créer des graphiques animé en 2d (canvas) et en 3d (WebGL)
+https://developer.mozilla.org/fr/docs/Web/API/WebGL_API
+
+API vidéo et Audio permet de lire de la vidéo et l'audio sans plugin
+API WebRTC : peer to peer / https://developer.mozilla.org/fr/docs/WebRTC
+API Webb storage : permet de faire des applications offline (cache manifest) / https://developer.mozilla.org/fr/docs/Web/API/Web_Storage_API
+API Web Workers : multi thread en JS / https://developer.mozilla.org/fr/docs/Utilisation_des_web_workers
+
+
+Compresser de la vidéo dans les formats web : 
+OGG / MP4 / WebbM
+https://handbrake.fr/
+
+Exemple Dataviz:
+https://editorializer.relaxnews.com/en/select/auto-moto
+
+Les APIs tierces parties : Librairies fournies par des fournisseurs de contenu et ne font pas partie par défaut du navigateur, on doit donc récupérer le code de la librairie (faire un lien vers la librairie) pour pouvoir l'utiliser dans son site.
+
+L'API de Twitter qui permet par exemple d'afficher les derniers tweets dans votre page.
+https://developer.twitter.com/
+
+L'API de googlemaps : permet d'afficher des cartes personnalisées.
+https://cloud.google.com/maps-platform/
+
+Autres API tierces parties
+https://www.programmableweb.com/category/all/apis
+
+
+--------------------
+Separation des concepts :
+Les règles de bases 
+- Pas de CSS dans javascript
+- Pas de balises HTML dans le javascript
+- Pas de CSS dans le HTML (des feuilles de styles internes ou externe oui mais on évite les styles inline <p style="color:red;">lorem </p>)
+
+Cours du 25/02/2019
+
+Comment écrire le js 
+
+RECHERCHE COULEUR 
+http://www.workwithcolor.com/hsl-color-picker-01.htm 
+pour rechercher la formule hsla afin d'appliquer le random

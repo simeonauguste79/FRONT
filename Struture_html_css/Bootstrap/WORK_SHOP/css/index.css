@@ -1,0 +1,37 @@
+#Work_Shop{
+width: 800px;
+height:1500px;
+margin: auto;
+}
+.menu{
+text-align: center;
+}
+nav{
+width: 800px;
+height: 700px;
+text-decoration: none;
+}
+ul{
+display: flex;
+list-style:none;
+float: left;
+border: 2px solid black;
+
+}
+li{
+justify-content: right;
+margin: 1px;
+font-size: 100%;
+}
+.recherche{
+border: 5px solid black;
+border-bottom: 5px solid black;
+}
+#carouselExampleFade{
+
+}
+.kiosque{
+width: 800px;
+height: 700px;
+padding: 200px;
+}

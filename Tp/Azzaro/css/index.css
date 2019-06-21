@@ -1,0 +1,66 @@
+body{
+background-color: #DCDCDC;
+}
+.conteneur{
+background: white;
+margin: auto;
+width: 60%;
+}
+header{
+background: white;
+width: 59vw;
+height: 22vh;
+position: relative;
+display: flex;
+}
+.Ma Boutique{
+height: 311px;
+margin: auto;   
+}
+nav{
+margin: auto;
+background: blue;
+height: 70px;
+position: relative;
+margin-bottom: 135px;
+text-align: justify;
+margin-top: -49px;
+}
+footer{
+background: #00BFFF;
+height: 14vh;
+}
+
+section{
+background: white;
+}
+.Renseignement{
+margin: 0px;
+height: 30vh;  
+float: left; 
+}
+
+blocGauche{
+float: right;
+}
+section.boutique{
+width: auto;
+height: 30vh;
+background: blue;
+}
+footer{
+text-align: justify;
+display: flex;
+
+
+}
+#Accueil{
+display: inline;
+list-style-type: none;
+display: inline;
+
+}
+ul li {
+display: inline;
+list-style-type: none;  
+}

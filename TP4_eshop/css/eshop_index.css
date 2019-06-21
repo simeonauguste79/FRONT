@@ -1,0 +1,63 @@
+#Eshop{
+margin:0 auto;
+width: 1300px;
+height: 1800px;
+}
+.header{
+width: 1300px;
+height: 300px;
+background: aqua;
+}
+
+.banniere{
+margin: top;
+width: 1300px;
+height: 100px;
+background: rgb(148, 154, 158);
+text-align-last: auto;
+padding: -10px;
+}
+.banniere p{
+font-size: 75%;
+display: flex;
+justify-content: space-around;
+margin: 10px;
+}
+#logo3{
+width: 1300px;
+height: 300px;
+display: flex;
+justify-content: space-around;
+}
+.logo{
+margin:-8px;
+padding: 10px;
+width: 600px;
+height:300; 
+}
+.devis{
+float: left;
+}
+.mopanier{
+float: left;
+}
+.moncompte{
+float: left;
+}
+.carroussel{
+width: 1300px;
+height: 300px;
+}
+.clear{
+clear: both;
+}
+#nav{
+width: 1300px;
+height: 510px;
+
+}
+footer .ESHOP{
+width: 1300px;
+height: 100px;
+background: blue;
+}

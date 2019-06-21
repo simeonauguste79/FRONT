@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--En-tête du document-->
+    <title> Ma page Flexbox</title>
+    <!-- Description sous le titre apparaîssant dans la recherche google - mot clés pour les moteurs de recherches -->
+    <meta name="description" content="Ma premiere page en html/css">
+    <!-- link for Font -->
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CLemonada%7COswald" rel="stylesheet">
+    <!-- link font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="description" content="Les positions en HTML / CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html" target="_blank">
+                <img src="imgages/logo_360.png" alt="logo html css">
+            </a>
+        </div>
+        <div id="slogan">
+            <h1>Mon premier site en HTML / CSS</h1>
+        </div>
+        <div id="rs">
+            <a href="https://twitter.com/?lang=fr" target="_blank">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </header>
+    <nav>
+        <a href="index.html">Structure</a>
+        <a href="texte.html">Textes</a>
+        <a href="selecteurs.html">Selecteurs</a>
+        <a href="images.html">Images</a>
+        <a href="position.html">Positions</a>
+        <a href="zoning.html">Zoning</a>
+        <a href="listes.html">Listes</a>
+        <a href="lien_menu.html">Liens & menus</a>
+        <a href="tableau.html">Tableaux</a>
+        <a href="formulaire.html">Formulaires</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="animation.html">Animations</a>
+        <a href="fancy_box.html">Fancy Box</a>
+        <a href="explication_flexbox.html" class="activ">Flexbox</a>
+    </nav>
+    <main>
+        <h2>Faire une mise en page avec FLEXBOX</h2>
+        <p>Nous allons découvrir le fonctionnement des FLEXBOX</p>
+        <h3>
+            <mark>Un conteneur, des éléments</mark>
+        </h3>
+        <p>=>le principe de la mise en page avec
+            <mark>Flexbox</mark>
+            est simple: vous définissez un
+            <mark>conteneur</mark>, et à l'interieur vous placez plusieurs
+            <mark>éléments(imaginez un carton dans lequel vous rangez plusieurs objets.)</mark>
+        </p>
+        <p>Sur une même page vous pouvez avoir
+            <mark>plusieurs éléments</mark>
+            .</p>
+        <h4>
+            <mark>Etudions le fonctionnement</mark>
+        </h4>
+        <img src="images/capture.PNG" alt="image">
+        <p>
+            <mark>Le conteneur est une balise HTML, et les éléments sont d'autres balises HTML à l'interieur</mark>
+        </p>
+        <img src="images/capture1.PNG" alt="image">
+        <p>mais si je fais comme cela, mes éléments vont se mettre les uns en dessous des autres.Ce sont des blocks.</p>
+        <p>je vais mettre une bordure,une taille et une couleur de fond aux éléments et on va observer leur organisation.</p>
+        <img src="igages/capture2.PNG" alt="image">
+        <p>
+            <mark>Rien de nouveau c'est le comportement normal.</mark>
+        </p>
+        <h4>
+            <mark>Aller soyons Flex</mark>
+        </h4>
+        <p>Si je mets une(une seul!)propriété
+            <mark>CSS toutv change</mark>
+            Cette propriété c'est
+            <mark>FLEX</mark>, et je l'applique au conteneur:</p>
+        <img src="images/capture3.PNG" alt="image">
+        <h4>
+            <mark>la direction</mark>
+        </h4>
+        <p>
+            <mark>Flexbox</mark>permet d'agencer ces éléments dans le sens que l'on veut. Avec
+            <mark>flex-direction</mark>, on peut les positionner
+            <mark>verticalement</mark>
+            ou encore les inverser. il peut prendre les valeurs suivantes:</p>
+        <p>
+            <ul>
+                <li>
+                    <mark>row</mark>:organisées sur une ligne</li>
+                <li>
+                    <mark>column</mark>:organisés sur une colonne</li>
+                <li>
+                    <mark>row-reverse</mark>:organisés sur une ligne</li>
+                <li>
+                    <mark>column-reverse</mark>:organisés sur une colonne, mais en ordre inversé.</li>
+            </ul>
+            <mark>exemple:</mark>
+        </p>
+        <img src="images/capture4.PNG" alt="image">
+        <p>Essayez de tester l'ordre inversé pour voir</p>
+        <img src="images/capture.PNG" alt="image">
+        <h4>
+            <mark>Retour à la ligne</mark>
+        </h4>
+        <p>par defaut, les blocs essaient de rester sur la même ligne même s'ils n'ont pas la places cela peut produire des
+            bugs de design parfois. Pour qu'ils aillent à la ligne lorsqu'ils n'ont plus de place. On utilise
+            <mark>flex-wrap</mark>qui prendre ces valeurs: </p>
+        <p>
+            <ul>
+                <li>
+                    <mark>nowrap</mark>: pas de retour à la ligne(par defaut)</li>
+                <li>
+                    <mark>wrap</mark>: les éléments vont à la ligne lorsqu'il n'y a plus de place</li>
+                <li>
+                    <mark>wrap-reverse</mark>: les éléments vont à la ligne lorsqu'il n'y a plus la place en sens inverse</li>
+            </ul>
+            <mark>exemple:</mark>
+        </p>
+        <img src="images/capture6.PNG" alt="image">
+        <p>Ceci n'était qu'une petite initiation aux flex.Je vous invite à vous renseigner et faire des tests
+        </p>
+        <h2>
+            <mark>En résumé</mark>
+        </h2>
+        <img src="images/capture7.PNG" alt="image">
+        <a href="#logo">
+            <button type="button">
+                <i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i>
+            </button>
+        </a>
+        <!-- aria accés de contenus web plus faciles pour les handicapés => https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA  -->
+        <footer>
+            <!-- Footer : zone du bas, ex: les liens administratifs, mentions légales, plan
+        du site...-->
+        </footer>
+</body>
+
+</html>

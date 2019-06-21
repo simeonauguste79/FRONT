@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a:link{
+            color:cadetblue;
+            text-decoration:none;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover, a:focus{
+            text-decoration: underline;
+            outline: thin solid gold;
+        }
+        a:active{
+            color: brown;
+        }
+        div{
+            padding: 16px;
+        }
+        :target{
+            border-left: 4px silver solid;
+        }
+        #chap1:target{
+            background: pink;
+        }
+        #chap2:target{
+            background: lightgreen;
+        }
+        #chap3:target{
+            background: coral;
+        }
+        /* sélecteur d'attribut : se lit tous les éléments qui ont des attribut title */
+        [title]{
+            font-weight: bold;
+        }
+        /* sélecteur d'attribut : cibler tout les liens dont l'attribut href commence par http */
+        /* leur metterz une bordure pointillée de 3pxviolet */
+
+        [href^=http]{
+            border-bottom: 3px dotted violet;
+            /* épaisseur de bordure | style de bordure | couleur de bordure*/
+            /* styles : solid = filet
+                        dashed = tiret
+                        dotted = pointillers */
+            background-color: silver;
+            display: inline-block;
+            margin-bottom: 2rem; /* 32px */
+            /* les margin et pading top et bottom ne fonctionnent pas avec les displlay inline, si je veux mettre un padding et ou une margin sur le lien, il faudra transformer son display (ou en block ou en inline block */
+            padding: .5rem 2rem .5rem .5rem;
+            background-image: url(images/liens_externe.svg);
+            background-repeat: no-repeat;
+            /* background-position: 0 0; en haut à gauche par défaut */
+            /* background-position: 100% 50%; */
+            background-position: right .25rem;
+            background-size: 1.5rem auto; /* largeur de 1.5rem et hauteur homotétique = la hauteur est automatiquement calculé en fonction de la largeur*/
+            
+
+            /* la même chose en forme décriture courte : */
+            /* background: silver url(images/liens_externe.svg) no-repeat .5rem; */
+            /* couleur de fond | chemin vers l'image | répétition | position x | position y */
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- lien absolu vers une page extérieur à mon site, contient TOUJOURS une adresse web complète avec le protocole http -->
+    <a href="http://www.apple.com" title="lien vers apple">Lien vers apple</a>
+    <a href="https://www.transavia.com" title="lien vers transavia">lien vers transavia</a>
+    <nav>
+        <a href="#chap1">Chapitre 1</a>
+        <a href="#chap2">Chapitre 2</a>
+        <a href="#chap3">Chapitre 3</a>
+    </nav>
+    <section>
+    <a href="#">Faux lien</a>
+    <div id="chap1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias molestiae corrupti dignissimos aperiam commodi, modi quos placeat blanditiis, iste eligendi ratione quisquam asperiores consectetur dolor fugit inventore facere corporis!</div>
+    <div id="chap2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias molestiae corrupti dignissimos aperiam commodi, modi quos placeat blanditiis, iste eligendi ratione quisquam asperiores consectetur dolor fugit inventore facere corporis!</div>
+    <div id="chap3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias molestiae corrupti dignissimos aperiam commodi, modi quos placeat blanditiis, iste eligendi ratione quisquam asperiores consectetur dolor fugit inventore facere corporis!</div>
+    </section>
+</body>
+</html>

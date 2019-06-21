@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .container{
+            border: 2px red solid;
+            margin: 0 auto;
+            width: 80%;
+            padding: 122px 2rem 0;
+            position: relative;
+        }
+        /* on cible le 1er p descendant du container */
+        .container p:nth-of-type(1){
+            color: orange;
+            /* la position relative permet que le badge soit placé par rapport à ce 1er p */
+            position: relative;
+        }
+        .container .carre{
+            height: 80px;
+            width: 80px;
+            background: red;
+            padding: 1rem;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            z-index: 1;
+        }
+        .container .rond{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background: green;
+            padding: 1rem;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            z-index: 2;
+        }
+        .container .triangle{
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 100px solid blue;
+            padding: 1rem;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            z-index: 3;
+        }
+        .badge{
+            width: 80px;
+            line-height: 80px;
+            background: crimson;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+            left: -40px;
+            top: 20px;
+        }
+        /*
+        
+        
+        Valeur pour la propriété position :
+        -absolute
+         un élément positionné en absolute est placé par rapport à son 1er ancètre positionné.
+        S'il n'a pas d'ancètre positionné, il sera placé par rapport à body
+        
+        -static 
+        par défaut toutes les balises sont en position: static; (elle ne sont pas positionnées et restent dans le flux)
+        
+        -relative : sera positionné par rapport à son emplacement naturel dans le flux ( comme si il avait une marge )
+        Son emplacement est réservé.
+        Un élément relatif devient cadre de positionnement pour ses enfants absolute
+        
+        par exemple dans ce contexte on ve donner une position: relative au 1er p pour que le badge en absolute soit calé par rapport à ce p
+        
+        -fixed : un élément qui a la position fixed, sera calé par rapport au viewport 
+        (fenetre  du navigateur), même si la page scroll, l'objet fixed reste calé sur la fenetre (ne marche pas sur mobile) */
+        nav{
+            border-bottom: navy solid;
+            padding: 1rem;
+            position: fixed;
+            background: rgb(0, 0, 0, .5);
+            width: 100%;
+            color: white;
+        }
+        nav ul{
+            /* reset du padding existant */
+            padding-left: 0;
+            /* flex permet d'aligner les enfants */
+            display: flex;
+            justify-content: space-around;
+        }
+        nav li{
+            border: 2px solid pink;
+            padding: 1rem;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Galerie</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus earum rem illo iusto. Quibusdam nisi saepe esse facere ipsa vel obcaecati, ad assumenda necessitatibus rem dolore nostrum. Facilis, minus qui!</p>
+        <span class="badge">NEW</span>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque, et, beatae, aperiam veniam deleniti suscipit ullam labore enim quis saepe possimus quo magni eligendi minus? Saepe veniam modi minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque, et, beatae, aperiam veniam deleniti suscipit ullam labore enim quis saepe possimus quo magni eligendi minus? Saepe veniam modi minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque, et, beatae, aperiam veniam deleniti suscipit ullam labore enim quis saepe possimus quo magni eligendi minus? Saepe veniam modi minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque, et, beatae, aperiam veniam deleniti suscipit ullam labore enim quis saepe possimus quo magni eligendi minus? Saepe veniam modi minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque, et, beatae, aperiam veniam deleniti suscipit ullam labore enim quis saepe possimus quo magni eligendi minus? Saepe veniam modi minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque, et, beatae, aperiam veniam deleniti suscipit ullam labore enim quis saepe possimus quo magni eligendi minus? Saepe veniam modi minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque, et, beatae, aperiam veniam deleniti suscipit ullam labore enim quis saepe possimus quo magni eligendi minus? Saepe veniam modi minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque, et, beatae, aperiam veniam deleniti suscipit ullam labore enim quis saepe possimus quo magni eligendi minus? Saepe veniam modi minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque, et, beatae, aperiam veniam deleniti suscipit ullam labore enim quis saepe possimus quo magni eligendi minus? Saepe veniam modi minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque, et, beatae, aperiam veniam deleniti suscipit ullam labore enim quis saepe possimus quo magni eligendi minus? Saepe veniam modi minus.</p>
+        <a href="#" class="carre"></a>
+        <a href="#" class="rond"></a>
+        <a href="#" class="triangle"></a>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Explication des FLOAT</title>
+
+</head>
+
+<body>
+
+<p>=>Le float
+
+    =>Notion de flux
+
+    <hr>
+
+    le flux d'un document pourrait se définir comme étant le comportement naturel
+
+    d'affichage des éléments d'une page Web. Autrement dit, les éléments succèdent dans
+
+    l'ordre ou ils sont déclarés dans le code HTMl.
+
+    De façon simpliste, les éléments de séquençage tels que "h1","p", ou "ul", s'
+
+    affichent logiquement par défaut les uns en dessous des autres tandis que les
+
+    éléments délimitant pour la plupart des portions de textes (mise en iotalique d'
+
+    un ou plusieurs mots par ex.) s'affichent côte à côtes <br>
+
+    maintenant que nous avons évoqué ce point, il faut comprendre que les balises HTML
+
+    ont toutes par défaut des ptropriétés de rendu CSS particulières.En fait, il existe
+
+    initialement deux grands groupes principaux de balises: <<mark>les balises de
+
+    rendu CSS "bloc"(block)</mark> et <mark>Les balises de rendu CSS "en-ligne"("inline")
+
+    </mark>Ces valeurs de rendu visuel coïncident généralement par défaut avec le
+
+    groupe d'appartenance HTML <br>
+
+    <br>
+
+    Des propriétés CSS d'un élément (display: block, inline, list-item, inline-block,
+
+    table, table-cell,....) découlent des spécificités d'affichage, son positionnement dans
+
+    le flux. <br>
+
+    <br>
+
+    Il est possible de sortir du flux naturel un ou plusieurs élément pour modififier leur
+
+    affichage avec du CSS  <br>
+
+    <br>
+
+    Nos deux groupes d'éléments peuvent être classés en deux familles:
+
+    <mark><strong>Les élements de type block(h1, p, ul, ol, dl, table, blockquote
+
+      etc...)</strong></mark>
+
+    <mark><strong>Les éléments de type inline(a, img, strong, abbr, etc...)</strong></mark>
+
+    <br>
+
+    <hr>
+
+</p>
+
+<p>
+
+  =>Le type "block"
+
+  <hr>
+
+  Les éléments de rendu CSS block se placent toujours l'un en dessous de l'autre
+
+  par défaut(comme un retour à la ligne.) par exemple, une suite de paragraphes(
+
+  balises <p>.) par ailleurs, un élément "bloc" occupe automatiquement, par défaut,
+
+  toute la largeur disponible dans son conteneur et peut être dimensionné à l'aide
+
+  des propriétés telles que "width", "height", "min-width", ou "min-height",....<br>
+
+  De plus un élément de type "block" peut contenir d'autres éléments de type block
+
+  ainsi que des éléments de type inline.
+
+  <mark><strong>A RETENIR <br>
+
+  Un élément de type block se différencie des éléments de type inline(en ligne)
+
+  sur différents points, dont ceux-ci:
+
+  <ul>
+
+    <li>Il occupe l'entièreté de la largeur de son conteneur</li>
+
+    <li>Il permet l'attribution de marges verticales</li>
+
+    <li>Il permet la modification de sa hauteur et de sa largeur.</li>
+
+  </ul>
+
+  le premier point est primordial, nous utiliserons abondamment ce comportement
+
+  par défaut bien pratique dans la création de nos mise en page. Notons également
+
+  que tout élément peut être "reclassé" dans la famille opposée grace à la propriété
+
+  display ( que nous verrons plus tard).</strong></mark>
+
+</p>
+
+<p>
+
+=> Le type "inline". <br>
+
+Les éléments de rendu "inline" se placent toujours l'un à côté de l'autre afin de
+
+rester dans le texte(par exemple la balise"strong","img", "a", "span").
+
+par défaut, il n'est aps prévu qu'ils puissent se positionner sur la page(même
+
+si cela est possible), ni de leur donner des dimensions( hauteur, largeur, profondeut)
+
+leur taille va être déterminée par le texte ou l'élément/image qu'ils contiennent.
+
+Référence:" http://fr.learnlayout.com/toc.html" (en français) <br>
+
+<br>
+
+la propriété CSS FLOAT permet de faire flotter des éléments côte à côte, donc de
+
+modifier le comportement naturellement de type block en comportement inline. A l'origine
+
+le float est prévu pour entourer une image avec du texte(paragraphe).
+
+</p>
+
+</body>
+
+</html>

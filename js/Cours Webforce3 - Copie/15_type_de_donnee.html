@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Types de données</title>
+</head>
+<body>
+    <script>
+        var maVariable = 10;
+        conole.console.log(typeof maVariable);
+
+//isNaN: is not a number
+console.log(isNaN(100));//Renvoie False
+console.log(isNaN("100")); // La chaîne 100 est convertie en number par le navigateur avant d'être testée, renvoie False aussi
+console.log(isNaN("abc100")); //renvoie True
+        var monTexte = 'soleil';
+        console.log(typeof monTexte);
+        
+        
+        var monBooleen = true;
+        console.log(typeof monTexte);
+        
+        
+        
+//MA LISTE 
+
+var maListe = ['pommes' , 'poires' , 'bananes' , 20];
+console.log(typeof maListe);
+
+//Entrée du if en javascript ou structure du texte (if) 
+/*Si quelque chose est vrai ou faux{
+ALORS
+FAIS UNE CHOSE 
+FAIS UNE AUTRE CHOSE
+*SI (CONDITIONS){
+    //En pseudo code algorithmique
+ALORS
+instructions 1;
+instructions 2;
+}
+}*/
+
+//En Javascript si le nom du cionstructeur estégal 'Array' ======>
+//ALORS on affiche en console la chaîne de caractère 'Array'
+if(maListe.constructor.name == 'Array'){
+console.log('Array');
+}
+//Array veut dire tableau de données en français, un objet qui a comme nom egal à Array
+
+
+        
+    </script>
+</body>
+</html>

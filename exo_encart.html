@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .encart{
+        width: 250px;
+        height: 260px;
+        border: 1px silver solid;
+        background-position: center top;
+        background-size: auto 100%; 
+        position: relative;
+        background:url(images/ladame.jpg) no-repeat;
+        }
+        .encart .desc{
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, .2);
+        position: absolute;
+        left: 5%;
+        color: white;
+        }
+        .rs{
+            background:rgba(225, 225, 225, .2);
+            position: absolute;
+            left: 5%;
+            top: 4px;
+            width: 90%;
+            display: none;
+        }
+        .encart:hover .rs{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="encart">
+        <div class="desc">
+            <strong>ART DE VIVRE</strong>
+            <p>mimi caroff alias miss de l'ouest</p>
+        </div>
+        <div class="rs"> FB Twiter
+
+        </div>
+
+    </div>
+</body>
+</html>

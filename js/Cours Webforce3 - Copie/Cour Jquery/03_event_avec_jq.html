@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function(){
+    //On aura tout le SCOPE Jquery
+    console.log('Jquery est bien chargé')
+    var btn = document.getElementById('btn');
+        var action = function(){
+            alert('tu as cliqué');
+        }
+        $('#btn').on('click', action); 
+    //ne rien faire avant d'afficher la ligne suivante.
+    })// FIN DU SCOPE JQUERY
+    </script>
+</body>
+</html>

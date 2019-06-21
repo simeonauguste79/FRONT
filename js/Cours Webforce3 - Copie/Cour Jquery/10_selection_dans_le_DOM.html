@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LE DOM</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width:70%;
+            margin: 0px;
+            padding: 2rem;
+        }
+        .lienActif{
+            font-weight: bold;
+            color: green;
+            text-decoration:none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="colLeft">
+         <h2 class="titlesite">
+         <a href="#">WF3/POLESS</a>
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, consectetur ipsum at distinctio earum natus ut maxime eligendi laborum beatae! Consequatur voluptates vero assumenda eaque aliquid temporibus non animi pariatur.</p>
+        <a href="ressources.pdf">Les ressources de cours</a>
+     </div>
+     <div class="colRight">
+         <h2 class="titleSite"> Cours Jquery</h2>
+         <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non nemo ipsum minima, similique eligendi fugit nisi distinctio in, aspernatur est blanditiis optio, placeat nostrum explicabo natus sit laboriosam doloremque!</p>
+         <form action="#">
+             <input type="date">
+             <input type="submit">
+         </form>
+     </div>
+    </div><!--FIN DU DIV CONTAINER-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function(){
+        console.log('jquery chargé');
+    
+    //pour selectionner la dive avec Jquery la div qui a la class=container
+    //$('div.container') selectionne le ou les éléments qui ont la class=container
+    //Pour mettre dans une variable, monElement les élements container.
+    /*On écriit */ 
+    var monElement = $('.container');
+    monElement.children()// selectionne tous les enfants directs de .container
+    console.log(monElement.children());//On voit dans la console les deux div colleft et colright
+    
+    console.log(monElement.children('.colleft'));/*choisit parmi les enfants de mon container celui qui a la classse colLeft*/
+    console.log(monElement.children.eq(1));/*Il selectionne dans la liste des éléments enfants de container, le deuxieme de la liste (on commence toujours par zero quand on compte de droite à gauche)*/
+
+    console.log(monElement.children().find('h2'));//selectionne tous les h2 parmi tous les descendants 
+    var monPara = $('p.para');//renvoie le parargraphe qui a la class=para
+    monPara.next();//renvoie le voisin suivant de para qui est donc form
+    console.log(monPara.prev()); //Il renvoie le voisin precedent de .para qui est donc titre bh2.titlechapter
+    console.log(monPara.next().next());//il n'y a rien après le form
+    console.log($('a').length);//Retourne 1 car on n'a qu'un seul lien dans la page
+
+    console.log($('h2.titlechapter').length);
+    //Chercher combien d'objet a mon attribut href est égal a #
+    console.log($('a[href]   = "#"'));
+    $('a[href $= ".pdf"]"  ').length;
+
+/*Au clic sur le lien , faire un togglClass(.lienActif) changer sa couleur.*/
+$('a[href $= ".pdf"] ').css("color", "red");
+
+$('a[href $= ".pdf"]"  ').hover(function(){
+    $(this).toggle('lienActif');
+})
+
+
+    })//FIN DU SCOPE JQUERY
+    </script>
+</body>
+</html>

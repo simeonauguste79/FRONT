@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        section{
+            border: 2px crimson solid;
+            width: 70%;
+            padding: 20px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        Ici contenu de section 
+    </section>
+    <script 
+    src="js/jquery-3.3.1.min.js">
+    </script>
+    <script>
+        $(function(){
+            console.log('jquery est bien chargé')
+            //ICI TOUT NOTRE CODE
+        $('section').css('background-color', 'color')
+        //On sectionne la balise section et avec css pour ajouter du css
+        //On va ajouter ce fond gold mais au click sur la balise section
+        $('section').on('click', function(){
+            //ici on écrira tout ce qui veut faire lors du click sur la balise section
+            //Changer la couleur du backgtround =>
+            //$(this).css('background-color', 'gold');
+            //this remplace 
+            //Ajoute une propriété css à la fonction
+            //2_Ajout plusieurs proprietés css à la section background et font par exemple ===>
+            $(this).css({
+                'background-color': 'orange', 'font-size': '2rem'
+            })
+            //Créer une variable couleur
+        var couleur = $(this).css('background-color');
+            //On recupere dans la varible couleu, la valeur de couleur de fond de this
+            console.log(couleur);
+            //selectionner la balise p qui est la class resultat
+            $('.resultat').html('la couleur de fond de section est:' + couleur);
+            //ATTENTION  il faut utiliser le point (.) parce que c'est une class
+        })
+        
+        })// FIN DE NOTRE CODE
+    </script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+/* REGLAGE GENEREAUX */
+
+
+
+.container-fluid {
+
+    background: #16181a;
+
+    height: 100vh;
+
+
+
+}
+
+
+
+.container {
+
+    border: 2px solid black;
+
+    height: 100vh;
+
+    /* padding: 0% */
+
+}
+
+
+
+#header {
+
+    background: #fff;
+
+    height: 15vh;
+
+    text-align: center;
+
+}
+
+
+
+#nav {
+
+    /* background: black; */
+
+    height: 5vh;
+
+}
+
+#carousel {
+
+    background: #2c2b2d;
+
+    height: 25vh;
+
+}
+
+
+
+#contenu {
+
+    /* background: #fff; */
+
+    height: 55vh;
+
+}
+
+
+
+/* CSS PERSO */
+
+#header img {
+
+    width: 100%;
+
+}
+
+
+
+#nav {
+
+    padding: 0;
+
+}
+
+
+
+
+
+/* Je change la couleur des liens en blanc */
+
+#nav a {
+
+    color: #fff;
+
+    font-family: 'News Cycle',
+
+        sans-serif;
+
+    font-size: 0.9rem;
+
+    line-height: 0.5vh;
+
+}
+
+/* je force bootstrap à changer la couleur de la navbar en noir */
+
+.navbar-light {
+
+    background-color: black !important
+
+}
+
+
+
+/* Je vise les élements enfants de la navbar pour faire apparaitre leur bordures gauches  */
+
+#nav a:nth-child(2),
+
+a:nth-child(3),
+
+a:nth-child(4),
+
+a:nth-child(5),
+
+a:nth-child(6),
+
+a:nth-child(7) {
+
+    border-left: 2px solid #fff;
+
+    height: 1vh;
+
+}
+
+
+
+
+
+/* J'effectue les réglage de la partie gauche de mon id contenu */
+
+#G {
+
+    background: #fff;
+
+    border: 5px solid gray;
+
+    height: 55vh;
+
+    text-align: center;
+
+}
+
+#G h2 {
+
+    position: relative;
+
+    right: 12vw;
+
+    top: 2vh;
+
+    /* color: #fff; */
+
+    font-weight: bold;
+
+}
+
+
+
+#G h3 {
+
+    position: relative;
+
+    bottom: 3vh;
+
+    right: 0.2vw;
+
+    /* color: #fff; */
+}
+
+#G h4 {
+font-size: 0.9rem;
+position: relative;
+left: 11vw;
+bottom: 2vh;
+}
+#G h4 span {
+    /* font-size: large; */
+font-weight: bold;
+}
+#G blockquote {
+text-align: justify;
+font-family: 'News Cycle',sans-serif;
+}
+#G blockquote span {
+font-weight: bold;
+}
+/* J'effectue les réglage de la partie droite de mon id contenu */
+#D{
+background: #000;
+height: 50vh;
+text-align: center;
+}
+#D h2 {
+background-color: red;
+color: #fff;
+font-family: 'Staatliches',cursive;
+width: max-content;
+text-align: inherit;
+position: relative;
+left: 11vw;
+top: 2vh;
+margin-bottom: 1.5rem;
+}
+

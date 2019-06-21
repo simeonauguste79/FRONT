@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo prenom</title>
+</head>
+<body>
+    <h1>Exo Prenom avec While</h1>
+    <p>Ici on va demander à l'internaute son prenom, ainsi celui de ses freres et soeurs. savoir à l'avance, combien, il de freres et soeurs</p>
+    <p>
+        Nous allons utiliser une boucle while qui va demander à chaque passage dans la boucle un prénom supplementaire. La boucle s'arrêtera que lorsque l'utilisateur choisira de ne plus entrer prénom.
+    </p>
+   <script>
+       var prenoms = '',
+           prenom;
+           
+/*Ici on a une boucle infinie, puisque la fonction = true est toujoours vraie, la boucle continue de jouer.
+*Le navigateur affiche prompt et ne s'arrête pas de s'afficher puisque proceed n'est jamais false.
+*/
+           //while(proceed){// proceed = true
+           // prenom = prompt('Entrez un prenom');
+           //}
+           //alert(prenom);
+
+           while(true){
+            prenom = prompt('Entrez un prenom' );
+            /*Ici on va tester si l'utilisateur va entrer un prénom dans le prompt, ALORS on ajoute ce prenom dans le tableau prenom
+            SINON on arrête la boucle en mettant la variable proceed à false.
+            */
+             
+             if(prenom){
+            prenoms += prenom + ''; //Ici on ajoute le nouveau prenoms au pluriel d'un espace.
+             }
+             // SINON
+             else{
+                 break; //puisqu'aucun prenom n'a été entré, on fait en sorte d'invalider en mettant la variable à false.
+             }
+             document.write(prenoms); //affiche les prenoms les uns à la suite des autres
+
+           }//FIN DE LA BOUCLE WHILE
+
+           //ON VA EVITER LA 
+            
+   </script> 
+</body>
+</html>

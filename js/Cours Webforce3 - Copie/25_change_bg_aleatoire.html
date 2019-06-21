@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHANGE ALEATOIRE</title>
+</head>
+<style>
+
+</style>
+<body>
+    <button>Change la couleur</button>
+    <script>
+/*Faire une fonction change bg qui contient une seule instruction qui est alert (ok)
+Cette fonction doit être declenchée lors du clic sur le bouton.
+
+*/
+//Quelle est l'argument? 
+//On doit faire appel à une fonction qui doit executer l'action ok en cliquant sur changeBg
+
+var btn = document.querySelector('button');
+function changeBg(){
+//alert('ok!');
+}
+btn.addEventListener('click' , changeBg);
+
+function changeBg(e){
+    document.body.style.backgroundColor = 'hsla('+ random(360) +', 100%, 50%, .5)';
+    //document.body.style.backgroundColor = 'hsla('+ random(360) +', 100%, 50%, .5)';
+monDiv.addEventListener('click', changeBg);
+}
+btn.addEventListener('click',  changeBg);
+
+function random(number){
+    return Math.floor(Math.random() * number);
+}
+    </script>
+</body>
+</html>

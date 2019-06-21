@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box;
+            /*Selectionneur universel, se lit toutes les balises. le box-sizing: border, permet 
+        box-sizing:border-box;*/
+        }
+
+            .container{
+                width: 80%;
+                border: 2px solid olivedrab;
+                margin: 0 auto;
+            }
+            .container figure{
+            border: 2px orange solid;
+            width: 25%;
+            margin: 0;
+            float: left;
+            }
+            figure img{
+            width: 100%;
+            }
+            p{
+            border: 1px solid black;
+            }
+            /* boite à outil des flottants */
+            .flt_l{
+            float: left;
+            }
+            .clear{
+                clear: both;
+                display: table;
+            }
+            .clearfix:after{
+            content: 'FAUX FOOTER';
+            clear: both;
+            display:table;
+            }
+            /* les media queries 
+            _pour tous les écrans plus petit que 640px, on va mettre 2 figures par ligne*/
+            @media(max-width: 640px){
+                body{
+                    background: hotpink;
+                }
+                .container{
+                    width: 100%;
+                }
+                .container figure{
+                    width: 50%;
+                }
+            }
+            /* pour tous les écrans plus petits que 400px, on va mettre 1 figure par ligne */
+            @media(max-width: 480px){
+                body{
+                    background: teal;
+                }
+                .container figure{
+                    width: 100%;
+                }
+            }
+
+        </style>
+</head>
+<body>
+   <div class="container">
+       <figure>
+           <img src="images/fete-montagne2017.jpg" alt="">
+           <figcaption>Legend</figcaption>
+       </figure>
+       <figure>
+           <img src="images/fete-montagne2017.jpg" alt="">
+           <figcaption>Legend</figcaption>
+       </figure>
+       <figure>
+           <img src="images/fete-montagne2017.jpg" alt="">
+           <figcaption>Legend</figcaption>
+       </figure>
+       <figure>
+           <img src="images/fete-montagne2017.jpg" alt="">
+           <figcaption>Legend</figcaption>
+       </figure>
+       <figure>
+           <img src="images/fete-montagne2017.jpg" alt="">
+           <figcaption>Legend</figcaption>
+       </figure>
+       <figure>
+           <img src="images/fete-montagne2017.jpg" alt="">
+           <figcaption>Legend</figcaption>
+       </figure>
+       <figure>
+           <img src="images/fete-montagne2017.jpg" alt="">
+           <figcaption>Legend</figcaption>
+       </figure>
+       <figure>
+           <img src="images/fete-montagne2017.jpg" alt="">
+           <figcaption>Legend</figcaption>
+       </figure>
+       <figure>
+           <img src="images/fete-montagne2017.jpg" alt="">
+           <figcaption>Legend</figcaption>
+       </figure>
+       <figure>
+           <img src="images/fete-montagne2017.jpg" alt="">
+           <figcaption>Legend</figcaption>
+       </figure>
+       <figure>
+           <img src="images/fete-montagne2017.jpg" alt="">
+           <figcaption>Legend</figcaption>
+       </figure>
+   </div> 
+</body>
+</html>

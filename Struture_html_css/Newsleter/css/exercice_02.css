@@ -1,0 +1,20 @@
+body{
+    font-family: sans-serif;
+    background-color: tan;
+    width: 800px;
+    text-align: center
+}
+
+#content{
+background-color: tan;
+height: 40px;
+margin: 0 auto;
+}
+
+.colonne{
+background-color: white;
+width: 800;
+height: 1200px;
+padding: 20px;
+margin: 5px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FONCTION INTRO HTML</title>
+</head>
+<body>
+    <h2>LES INSTRUCTIONS</h2>
+    <p>Les fonctions permettent de regrouper une serie d'instructions pour pouvoir les réutiliser</p>
+    <h3>Les instructions</h3>
+    <p>Un script dans Js, est un fichier contenant un ou plusieurs instructions placées les unes à la suite des autres.<br>
+    Chacune de ces instructions peut être vu comme un ordre donné au moteur Javascript, une action que vous souhaitez réaliser à la manièred'une recette de cuisine.</p>
+    <ul>
+        <li>Faire fondre du beurre</li>
+        <li>Melanger du beurre avec le </li>
+        <li>Saupoudre</li>
+    </ul>
+    <p>Les instructions se suivent et sont éffectuées les unes à la suite des autres <strong>du haut vers le bas</strong> <br>
+        Le browser parse les (analyses) dans dans l'ordr'e du flux..</p>
+        <h4>CHAQUE INSTRUCTION DOIT SE TERMINER PAR UN POINT VIRGYULE</h4>
+        <p>Afin de determiner au moteur Javascript que cette instruction est terminée</p>
+        <h2>LES FONCTIONS</h2>
+        Les fonctions permettent de regrouper une serie d'instructionpour pouvoir les réeutulisre . Quand on a besoin du code d'une serie d'instructions, plutôt que de réecrire à chaque fois toutes instructions , on appelera une fonction par son nom (faireunGateau). cette fonction contient l'ensemble des instructions à executer.
+        <p>Par exemple, la fonction alert est une fonction native (integre au navigateur) qui contient en gros les instructions suvantes: </p>
+    <ul><li>Créer le cadre de la boîte de de dialogue</li>
+        <li>Positionner le cadre dans la fenêtre</li>
+        <li>Créer un background semi transparent sur toutes les pages</li>
+        <li>Placer un bouton avec le texte ok et un événement click</li>
+        <li>Créer une zone de texte qui affichera le texte de l'art à présenter au visiteur</li>
+    </ul>
+    <p>Nous on a juste besoin d'utiliser la fonction alert() en lui donnant un argument exemple alert('coucou'). <br>
+    La fonction executera tputes instructions à chaque fois.. <br>
+On peut utiliser cette fonction alors quand on veut en la declachant avec alert(quelque chose)
+ce quelque chose est un argument attendu par la fonctio
+<code>
+    var mavariable = document.queryselection('h2');
+    alert('coucou');
+</code>
+    <p>Les fonctions querySelector et alert sont disponibles dans le navigateur, ce sont des  <strong>methodes</strong></p>
+    <p>Si vous voyez quelques chose qui ressemble à une variable et qui est suivie de paranthèses, c'est une fonction
+es arguments sont palcés ENTRE les parantheses , separées par des virgules s'il y en a plusieurs.</p> 
+<p>Par exemple la fonction alert() faiot apparaitre une popup mais vous devez donner une chaîne comme argument pour indiquer à lma fonction ce que vous souhaiitez écrire dans la fenêyere</p>
+
+        <script>
+            //alert("il y erreur")
+            //En cas d'absence de point virgule en fin d'instruction, seule la ligne 1 s'execute
+            [1,2].forEach(alert);
+            alert('ok ça marche');
+            ['ok', 'impec'].forEach(alert);
+            //Le forEach s'execute bien
+
+            var mavariabble = document.querySelector('h2');
+            alert('coucou');
+
+            /*************************FONCTION BONJOUR*****************************************/
+
+            function disBonjour(){
+            // ====> 
+            document.write("bonjour !");
+            }
+            //J'ai invoqué une fonction, il faut alors invoquer la fonction, on indique au moteur Javascrip d'executer la fonction, //car elle ne s'execute pas toute seule
+
+            disBonjour(); 
+            //le groupe de paranthèse va permettre d'executer la fonction
+            disHello = function(){
+                document.write('Hello !');
+            }
+            //invoquer une fn en écrivant un couple de paraenthèsess après le nom de la fonction (C'est le couple de paranthèse qui //declenche) l'execution de la fonction
+
+            //Invoquer
+            disHello();
+            //La variable disHello() contient une reference à la fct°, elle tient du doigt la fonction elle-même. 
+            //Une Fn qui n'a pas son propre nom est appelée une Fn anonyme
+
+// Une autre fonction
+
+disHola(){ 
+return 'Hola!';
+}
+salutation = disHola();
+document.write(salutation);
+//Ici on vient de stocker dans une variable externe à la Fn, la valeur crééé par cette Fn
+
+//Après les fonctions qui attendent une chaînes de paramarguments, on va créer qui n'en ont pas besoin
+
+function addittion(num1, num2){
+    resultat = num1 + num2;
+    return resultat; // qui envoie le resultatnà l'exterieur de la Fn
+}
+//Dans l'invocation de la Fn, on envoie deux arguments
+document.write( addition(2,6)    );
+
+            
+        </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* Le CSS reset, c’est un simple fichier css qui permet de mettre tout à zéro. */
+/* Ici je vais determiner les propriétés de mon bod afin de travailler sur le logo Webforce 3 */
+body{
+background-color: white;
+font-family: 'Courier New', Courier, monospace;
+width: 100vw;
+height: 230vh;
+}
+/* Fixons le logo1 dans le body */
+#logo1{
+width: 20vw;
+height: 18vh;
+margin-left: 12vh;
+margin-bottom: -15vh;
+}
+/* je fiixe le texte contenu dans le body */
+ #texte{
+width: 84vw;
+height: 10vh;
+margin-right: 34vh;
+border: none;
+width: 13vw;
+margin-left: 170vh;  
+}
+/* Fin des caracteristiques sur le body */
+
+/* Ici, je vais determiner les marges de mon #container */
+#container{
+width: 74vw;
+height: 256vh;
+background: black;
+margin: 0 auto;
+} 
+/* Je vais fixer ma div contenant le logo2 Sport et le texte qui va avec, étant donné qu'est c'est une div class, je ne manquerai pas d'utiliser le .logo2  comme cela a été pour le premier logo Webforce3*/
+.logo2{
+width: 19vw;
+height: 21vh;
+margin-left: 15vh;
+float: left;
+}
+a{
+list-style:none;   
+}
+.clear{
+clear: both;
+}
+/************************** Fin du #contaioner***********************/
+
+/* Ici je vais determiner les marges dmon header */
+header{
+width: 74vw;
+height: 21vh;
+background: #AAB1B8;
+}
+
+/* Je fixe maintenant la div contenant les images dans header en forme de menu contenant mon compte et mon panier */
+.image3{
+width: 30vw;
+height: 21vh;
+margin-left: 59vh;
+
+}
+
+/* Fin des marges sur le header */
+
+/* Je vais definir les marges de mes deux sections */
+section{
+width: 56vw;
+height: 66vh;
+margin: 0 auto;
+background: white
+}
+.boxe{
+height: 39vh;
+margin: 0 auto;
+text-align: center;
+}
+/* Fin des marges sur la section */
+
+/* Nous allons ici determiner les marges du footer */
+footer{
+width: 74vw;
+height: 36vh;
+background: #424548;
+}
+/* je fixe les ul et li afin de leur apporter l'aspec qu'il faudra présenter */
+ul li{
+list-style:none;
+display: inline;
+}
+footer h3{
+text-align: center;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LES FONCTIONS IMBRIQUEES ET CLOSURES</h1>
+    <p>Il faut garder à l'esprit qu'on oeut apppeler de n'importe où, même à l'interieur d'une autre fonction. br   
+        Les fonctions imbriquées sont utilisées comme moyen de garder un code bien organisée. <br>
+        Une grande fonction complexe est plus facile à comprendre si vous la divisez en plusierurs sous-fonctions.
+    </p>
+
+    <script>
+        //ETAPE A: On va faire une meta-fonction qui imbrique plusieurs sous-fonctions.
+
+        function maMetaFunction(){
+            var maVariable = 1;
+
+
+            sousFonction1();
+            sousFonction2();
+            sousFonction3();
+        }//FIN DE LA METAFONCTION
+
+        function sousFonction1(){
+            document.write(maVariable);
+        } 
+        function sousFonction2(){
+            document.write(maVariable);
+        } 
+        function sousFonction3(){
+            document.write(maVariable);
+        } 
+        //Ici on declenche la metFunction
+        maMetaFunction();
+        /*Il faut s'assurer que les valeurs des variables utiklisées ont une portée correcte
+        l'exemple ci-dessous comporte une ReferenceErreur mavariable is not defined.
+        Si la valeur de maVariable est definie dans la même portée correcte, l'exemple ci-dessus comporte que les appels de function, elle n'est pas definie dans les.
+        Pur que cela fonctionne, il faut faire passer les valeurs dans la fonction
+        */ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.container {
+/* background: bisque; */
+background: linear-gradient(to bottom, #cedce7 45%, #cedce7 45%, #596a72 100%);
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+height: 180vh;
+width: 76vw;
+margin: 0 auto;
+box-shadow: -25px -7px 50px -18px rgba(0, 0, 0, 0.75);
+border-radius: 7%;
+}
+h1 {
+text-align: center;
+}
+p {
+font-family: 'Taprom',
+cursive;
+text-align: justify;
+}
+section {
+margin-bottom: 11vh;
+margin-top: 11vh;
+position: relative;
+left: 4vw;
+}
+.img {
+/* background: blue; */
+/* border: 1px solid red; */
+margin-right: 2vw;
+height: 41;
+width: 24vw;
+float: left;
+}
+img {
+height: 41vh;
+border-radius: 7%;
+}
+.text {
+/* background: blueviolet; */
+/* border: 1px solid red; */
+height: 44vh;
+width: 68vw;
+}
+.clear {clear: both;
+
+}
+

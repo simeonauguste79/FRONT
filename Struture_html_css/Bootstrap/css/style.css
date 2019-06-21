@@ -1,0 +1,29 @@
+/* @Formateur */
+/* on va surcharger certaines classes de BS pour changer les couleurs */
+
+/* on commence par changer le bleu de la classe .primary de BS */
+nav.navbar.bg-primary,
+.bg-primary,
+a.btn-primary,
+a.nav-link.active {
+    background-color: #d95700 !important;
+    border-color: #d95700;
+}
+
+a.card-link,
+a.nav-link {
+    color: #d95700;
+}
+
+/* on ajoute une couleur de fond sur la page */
+body {
+    background-color: #ededed;
+}
+
+/* et comme notre couleur de fond efface la mise en valeur de notre jumbotron on ajuste cela */
+.jumbotron {
+    background-color: #ffffff !important;
+    /* on change la couleur de fond */
+    border-top: 3px solid rgb(219, 219, 219);
+    /* on ajoute une bordure en haut qui donne un effet d'ombre provenant de la nav */
+}

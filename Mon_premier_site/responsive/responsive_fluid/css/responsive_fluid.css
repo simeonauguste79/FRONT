@@ -1,0 +1,46 @@
+p{
+    margin: 0;
+}
+
+main{
+    border: 2px solid pink;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+header{
+    background:ROSYBROWN;
+    height: 15vh;
+}
+nav{
+    background: DARKKHAKI;
+    height: 5vh;
+}
+section{
+    background: black;
+    margin: 2%;
+}
+footer{
+    background: POWDERBLUE;
+    height: 7.5vh;
+}
+.a, .b, .c, .d{
+    float: left;
+    width: 50%;
+    height: 28vh;
+}
+.a{
+    background: tomato;
+}
+.b{
+    background: pink;
+}
+.c{
+    background: khaki;
+}
+.d{
+    background: PALETURQUOISE;
+}
+.clear{
+    clear: both;
+}

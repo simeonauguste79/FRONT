@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exo sur Portée des variables en Js</h1>
+    <p>deux fonctions appélées a() et b() et 3 variables (x,y et z) <br>
+    Deux d'entre elles seront definies à l'interieur de la fonction et l'autre sera definie à la portée globale. <br>
+    On aura encore un 3ème fonction qu'on appelera sortie() qui prend un seul paramètre et qui le renvoie dans le paragraphe de la page.
+</p>
+
+<script>
+
+//ETAPE A
+var x = 1; // La variable x est la portée globale
+function a(){
+    y = 2;
+}
+function b(){
+    var z = 3; // La variable y et z sont dans les portée locales
+}
+
+    function sortie(valeur){
+        //On crée un noeud ou (nod) p en angalis qui est un objet du document
+    var para = document.createElement('p');
+    //Ajoute ce (nod) comme enfant de la balise body
+    document.body.appendChild(para);
+    /*créer le (node) de texte qui est le contenu texte de la balise p avec la methode textContent . (on pourra aussi utiliser innhereit)*/
+    para.textContent = 'la valeur est : ' + valeur;
+
+    }
+
+//Invocation de la fonction sortie en lui envoyant l'argument x
+sortie(x) // ======> on affiche la valeur de x dans le paragraphe.
+/*Comme x est dans portée globale , on y a bien accès et le paragraphe créé par la fonction sortie affiche bien la valeur 1 de x. Vous devez normalement voir la valeur de la variable.*/ 
+sortie(y);// sortie y nous donne erreur et non definie.
+
+// sortie(y) et sortie(z) envoie un message reference erreur (is not defined. POURQUOI) ? A cause de la paortée des fonctions (y) et (z) sont enfermée dans la fonction a() et b() lorsqu'elles appélées depuis la portées globale.
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ARRAY ET OBJECT</title>
+</head>
+<body>
+    <script>
+var monTableau = ['fraise' , 'orange' , 'melon'];
+//le type est un objet
+console.log(typeof monTableau);
+//Le nom du constructeur c'est array = un tableau
+if(monTableau.constructor.name == 'Array'){
+console.log('Array');
+}
+//Pour recuperer une information stockée dans un tableau, par exemple 'orange', on va utiliser un index (une clé) de tableau
+console.log(monTableau[1]); //index de fraise sera '0' et l'index de 'orange' sera [1]
+//On va créer un dictionnaire ou un tableau associatif
+traduc = {
+    "fraise" : "strawberry",
+    "pomme" : "apple",
+    "poire" : "pear"
+}
+//On recupèere une information dans un dictionnaire associatif, on utilise des mots clés 
+console.log(traduc.pomme);
+//une ligne qui se termine par un point virgule est une instruction
+/*************************************************************LE FRIGO**********************************************************/
+// {} ====> accolade
+// ()
+
+
+frigo = {
+"fruits" : ["ananas" , "mangue" , "papaye"],
+"legumes" : ["poireaux" , "courgettes"],
+"laitages" : ["yaourts" , "lait"] 
+};
+console.log(frigo.legumes[1]);
+mesFruits = frigo.fruits;
+console.log(mesFruits);
+//La methode de Leggs 
+//Une façon de récuperre la liste des legumes
+mesLegumes = frigo["legumes"];
+console.log(mesLegumes);
+    </script>
+
+</body>
+</html>
